@@ -1,0 +1,52 @@
+{
+	"files.autoSave": "onFocusChange",
+	"window.autoDetectColorScheme": true,
+	"debug.onTaskErrors": "abort",
+
+	"editor.renderWhitespace": "none",
+	"editor.fontFamily": "'Fira Code'",
+	"editor.fontLigatures": true,
+	"editor.insertSpaces": false,
+	"editor.wordWrap": "on",
+	"editor.codeLensFontFamily": "Fira Code",
+	"editor.definitionLinkOpensInPeek": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnType": false,
+	"editor.minimap.enabled": false,
+	"editor.suggestSelection": "first",
+	"editor.bracketPairColorization.enabled": true,
+
+	"liveServer.settings.CustomBrowser": "chrome",
+	"liveServer.settings.donotVerifyTags": true,
+	"liveServer.settings.fullReload": true,
+	"liveServer.settings.donotShowInfoMsg": true,
+
+	"html.format.indentInnerHtml": true,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"security.workspace.trust.untrustedFiles": "open",
+
+	"prettier.singleQuote": true,
+	"prettier.endOfLine": "auto",
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true,
+
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"livePreview.notifyOnOpenLooseFile": false,
+
+	"workbench.iconTheme": "eq-material-theme-icons-light",
+	"workbench.startupEditor": "none",
+	"workbench.editor.enablePreview": false,
+
+	"vscode_custom_css.imports": [
+		"file:///D:/Program/vscode_config/gradient.css"
+	],
+	"workbench.colorTheme": "Dracula darker contrast",
+	"editor.lineHeight": 1.7,
+	"workbench.statusBar.visible": false,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"extensions.ignoreRecommendations": true
+}
