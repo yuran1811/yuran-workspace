@@ -16,18 +16,19 @@
 
 ### Step 2: Add the file path of "gradient.css" to "settings.json"
 
--   Open "settings.json" and add the file path of "gradient.css" like this:
-    ![File Path](assets/filepath.png)
+#### Open "settings.json" and add the file path of "gradient.css" like this:
+
+![File Path](assets/filepath.png)
 
 ### Step 3: Apply the "gradient.css" to VSCode and fix "Unsupported"
 
 #### Run "Custom CSS and JS Loader" extension
 
-    ![File Path](assets/customCSS_Ext.png)
+![File Path](assets/customCSS_Ext.png)
 
 #### Run "Fix VSCode Checksums" extension
 
-    ![File Path](assets/fixChecksums_Ext.png)
+![File Path](assets/fixChecksums_Ext.png)
 
 ### Step 4: Done! Open your code and enjoy!!!
 
