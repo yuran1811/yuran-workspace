@@ -1,29 +1,35 @@
 # VSCode-Config
 
-### About
+## About
 
-#### My Theme setting is based on [**Evondev gradient.css**](https://github.com/evondev/evondev-dracula/blob/master/gradient.css) and here is [**my gradient.css**](assets/gradient.css)
+### My Theme setting is based on [**Evondev gradient.css**](https://github.com/evondev/evondev-dracula/blob/master/gradient.css) and here is [**my gradient.css**](assets/gradient.css)
 
 ---
 
-### Setting Theme Steps
+## Setting Theme Steps
 
-#### Step 1: Install needed extensions
+### Step 1: Install needed extensions
 
 -   [**Custom CSS and JS Loader**](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)
 -   [**Evondev Dracula**](https://marketplace.visualstudio.com/items?itemName=evondev.dracula-high-contrast)
 -   [**Fix VSCode Checksums**](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums)
 
-#### Step 2: Add the file path of "gradient.css" to "settings.json"
+### Step 2: Add the file path of "gradient.css" to "settings.json"
 
 -   Open "settings.json" and add the file path of "gradient.css" like this:
     ![File Path](assets/filepath.png)
--   Run "Custom CSS and JS Loader" extension
+
+### Step 3: Apply the "gradient.css" to VSCode and fix "Unsupported"
+
+#### Run "Custom CSS and JS Loader" extension
+
     ![File Path](assets/customCSS_Ext.png)
--   Run "Fix VSCode Checksums" extension
+
+#### Run "Fix VSCode Checksums" extension
+
     ![File Path](assets/fixChecksums_Ext.png)
 
-#### Step 3: Done! Open your code and enjoy!!!
+### Step 4: Done! Open your code and enjoy!!!
 
 ## Extensions for Web Dev:
 
