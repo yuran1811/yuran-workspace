@@ -19,20 +19,9 @@
 -   Open "settings.json" and add the file path of "gradient.css" like this:
     ![File Path](assets/filepath.png)
 -   Run "Custom CSS and JS Loader" extension
-
-```
-	1: Ctrl + Shift + P
-	2: Type "Enable Custom CSS and JS"
-	3: Enter, then Restart VSCode
-```
-
+    ![File Path](assets/customCSS_Ext.png)
 -   Run "Fix VSCode Checksums" extension
-
-```
-	1: Ctrl + Shift + P
-	2: Type "Fix Checksums: Restore" -> Enter, then Restart VSCode
-	3: Type "Fix Checksums: Apply" -> Enter, then Restart VSCode
-```
+    ![File Path](assets/fixChecksums_Ext.png)
 
 #### Step 3: Done! Open your code and enjoy!!!
 
