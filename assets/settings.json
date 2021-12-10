@@ -17,6 +17,8 @@
 	"editor.minimap.enabled": false,
 	"editor.suggestSelection": "first",
 	"editor.bracketPairColorization.enabled": true,
+	"editor.lineHeight": 1.7,
+	"editor.multiCursorModifier": "ctrlCmd",
 
 	"liveServer.settings.CustomBrowser": "chrome",
 	"liveServer.settings.donotVerifyTags": true,
@@ -26,8 +28,9 @@
 	"html.format.indentInnerHtml": true,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
-	"terminal.integrated.defaultProfile.windows": "Command Prompt",
 	"security.workspace.trust.untrustedFiles": "open",
+
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
 
 	"prettier.singleQuote": true,
 	"prettier.endOfLine": "auto",
@@ -35,18 +38,28 @@
 	"prettier.useTabs": true,
 
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-	"livePreview.notifyOnOpenLooseFile": false,
 
-	"workbench.iconTheme": "eq-material-theme-icons-light",
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none",
 	"workbench.editor.enablePreview": false,
-
-	"vscode_custom_css.imports": [
-		"file:///D:/Program/vscode_config/gradient.css"
-	],
 	"workbench.colorTheme": "Dracula darker contrast",
-	"editor.lineHeight": 1.7,
-	"workbench.statusBar.visible": false,
-	"editor.multiCursorModifier": "ctrlCmd",
-	"extensions.ignoreRecommendations": true
+
+	"vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
+	"extensions.ignoreRecommendations": true,
+
+	"livePreview.notifyOnOpenLooseFile": false,
+	"livePreview.openPreviewTarget": "External Browser",
+	"livePreview.serverKeepAliveAfterEmbeddedPreviewClose": 10,
+	"livePreview.autoRefreshPreview": "On Changes to Saved Files",
+
+	"gitlens.codeLens.scopes": ["document", "containers", "blocks"],
+	"gitlens.statusBar.alignment": "left",
+	"git.confirmSync": false,
+
+	"polacode.transparentBackground": true,
+	"material-icon-theme.hidesExplorerArrows": true,
+
+	"liveSassCompile.settings.showOutputWindow": false,
+	"liveSassCompile.settings.generateMap": false
+	// "liveSassCompile.settings.autoprefix": null
 }

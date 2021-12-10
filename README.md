@@ -2,7 +2,7 @@
 
 ## About
 
-### My Theme setting is based on [**Evondev gradient.css**](https://github.com/evondev/evondev-dracula/blob/master/gradient.css) and here is [**my gradient.css**](assets/gradient.css)
+### My Theme setting is based on [**Evondev gradient.css**](https://github.com/evondev/evondev-dracula/blob/master/gradient.css) and [**my gradient.css here**](assets/gradient.css)
 
 ---
 
@@ -34,13 +34,31 @@
 
 ## Extensions for Web Dev:
 
--   [**Auto Rename Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
--   [**CSS Peek**](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+### Snippet
+
 -   [**Evondev Snippets**](https://marketplace.visualstudio.com/items?itemName=evondev.evondev-snippets)
--   [**HTML to CSS autocompletion**](https://marketplace.visualstudio.com/items?itemName=solnurkarim.html-to-css-autocompletion)
 -   [**JavaScript Snippet Pack**](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-javascript-snippet-pack)
+
+### Live
+
 -   [**Live Preview**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
--   [**Material Theme**](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
+-   [**Live SASS Compiler**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
+
+### Auto
+
+-   [**CSS Peek**](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+-   [**Auto Rename Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+-   [**Visual Studio IntelliCode**](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
+-   [**HTML to CSS autocompletion**](https://marketplace.visualstudio.com/items?itemName=solnurkarim.html-to-css-autocompletion)
+
+### Theme
+
+-   [**Evondev Dracula**](https://marketplace.visualstudio.com/items?itemName=evondev.dracula-high-contrast)
+-   [**Material Icon Theme**](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+
+### Others
+
+-   [**GitLens**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+-   [**Polacode**](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 -   [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 -   [**Sublime Text Keymap**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
--   [**Visual Studio Intellicode**](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
