@@ -68,7 +68,8 @@
 	color: #ffcd82;
 }
 .mtk18 {
-	color: #ffc368;
+	/* color: #ffc368; */
+	color: lightblue;
 }
 
 .monaco-workbench
