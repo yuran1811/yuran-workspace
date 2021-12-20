@@ -1,14 +1,14 @@
 {
+	"debug.onTaskErrors": "abort",
 	"files.autoSave": "onFocusChange",
 	"window.autoDetectColorScheme": true,
-	"debug.onTaskErrors": "abort",
 
 	"editor.renderWhitespace": "none",
 	"editor.fontFamily": "'Fira Code'",
+	"editor.codeLensFontFamily": "Fira Code",
 	"editor.fontLigatures": true,
 	"editor.insertSpaces": false,
 	"editor.wordWrap": "on",
-	"editor.codeLensFontFamily": "Fira Code",
 	"editor.definitionLinkOpensInPeek": true,
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
@@ -17,20 +17,18 @@
 	"editor.minimap.enabled": false,
 	"editor.suggestSelection": "first",
 	"editor.bracketPairColorization.enabled": true,
-	"editor.lineHeight": 1.7,
 	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.lineHeight": 1.7,
 
 	"liveServer.settings.CustomBrowser": "chrome",
 	"liveServer.settings.donotVerifyTags": true,
-	"liveServer.settings.fullReload": true,
+	"liveServer.settings.fullReload": false,
 	"liveServer.settings.donotShowInfoMsg": true,
 
 	"html.format.indentInnerHtml": true,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"security.workspace.trust.untrustedFiles": "open",
-
-	"terminal.integrated.defaultProfile.windows": "Command Prompt",
 
 	"prettier.singleQuote": true,
 	"prettier.endOfLine": "auto",
@@ -48,18 +46,33 @@
 	"extensions.ignoreRecommendations": true,
 
 	"livePreview.notifyOnOpenLooseFile": false,
-	"livePreview.openPreviewTarget": "External Browser",
 	"livePreview.serverKeepAliveAfterEmbeddedPreviewClose": 10,
 	"livePreview.autoRefreshPreview": "On Changes to Saved Files",
 
-	"gitlens.codeLens.scopes": ["document", "containers", "blocks"],
-	"gitlens.statusBar.alignment": "left",
 	"git.confirmSync": false,
 
 	"polacode.transparentBackground": true,
 	"material-icon-theme.hidesExplorerArrows": true,
 
 	"liveSassCompile.settings.showOutputWindow": false,
-	"liveSassCompile.settings.generateMap": false
-	// "liveSassCompile.settings.autoprefix": null
+	"liveSassCompile.settings.generateMap": false,
+	// "liveSassCompile.settings.autoprefix": null,
+	"livePreview.portNumber": 1811,
+	"terminal.integrated.defaultProfile.windows": "cmd",
+	"terminal.external.windowsExec": "D:\\Program\\cmder\\Cmder.exe",
+	"terminal.integrated.profiles.windows": {
+		"cmd": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash"
+		}
+	},
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.cursorStyle": "line"
 }
