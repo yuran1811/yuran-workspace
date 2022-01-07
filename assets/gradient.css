@@ -100,8 +100,23 @@
 	border: 0;
 	width: 3.7px;
 	height: 100%;
-	animation: top-to-bottom 0.6s infinite linear;
-	background-image: linear-gradient(to bottom, #fc6c8f, #ff2ced);
+
+	/* animation: top-to-bottom 0.6s infinite linear;
+	background-image: linear-gradient(to bottom, #fc6c8f, #ff2ced); */
+
+	background-size: 400% 400%;
+	background-image: linear-gradient(
+		-135deg,
+		#fc6c8f,
+		#ff2ced,
+		#ffb86c,
+		#2cccff,
+		#20e3b2,
+		#ffcc70,
+		#c850c0,
+		#4158d0
+	);
+	animation: gradient-down 3s ease-in-out alternate infinite;
 }
 
 .monaco-workbench
@@ -113,8 +128,22 @@
 	> .tab.active.tab-border-top
 	> .tab-border-top-container {
 	height: 3.7px;
-	animation: left-to-right 0.18s infinite linear;
-	background-image: linear-gradient(to left, #fc6c8f, #ff2ced);
+	/* animation: left-to-right 0.18s infinite linear;
+	background-image: linear-gradient(to left, #fc6c8f, #ff2ced); */
+
+	background-size: 400% 400%;
+	background-image: linear-gradient(
+		-45deg,
+		#fc6c8f,
+		#ff2ced,
+		#ffb86c,
+		#2cccff,
+		#20e3b2,
+		#ffcc70,
+		#c850c0,
+		#4158d0
+	);
+	animation: gradient 3s ease-in-out alternate infinite;
 }
 
 .monaco-workbench
@@ -124,9 +153,43 @@
 	> .monaco-action-bar
 	.badge
 	.badge-content {
-	background-image: linear-gradient(var(--gradient-dir2), #fc6c8f, #ff2ced);
+	background-size: 400% 400%;
+	background-image: linear-gradient(
+		-135deg,
+		#fc6c8f,
+		#ff2ced,
+		#ffb86c,
+		#2cccff,
+		#20e3b2,
+		#ffcc70,
+		#c850c0,
+		#4158d0
+	);
+	animation: gradient 3s ease-in-out alternate infinite;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradient-down {
+	0% {
+		background-position: 50% 0%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+}
 @keyframes left-to-right {
 	from {
 		background-image: linear-gradient(to left, #fc6c8f, #ff2ced);
@@ -135,7 +198,6 @@
 		background-image: linear-gradient(to right, #fc6c8f, #ff2ced);
 	}
 }
-
 @keyframes top-to-bottom {
 	from {
 		background-image: linear-gradient(to top, #fc6c8f, #ff2ced);

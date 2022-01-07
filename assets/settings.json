@@ -1,6 +1,5 @@
 {
 	"debug.onTaskErrors": "abort",
-	"files.autoSave": "onFocusChange",
 	"window.autoDetectColorScheme": true,
 
 	"editor.renderWhitespace": "none",
@@ -19,6 +18,10 @@
 	"editor.bracketPairColorization.enabled": true,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.lineHeight": 1.7,
+	"editor.suggest.preview": true,
+
+	"javascript.inlayHints.parameterNames.enabled": "all",
+	"typescript.inlayHints.parameterNames.enabled": "all",
 
 	"liveServer.settings.CustomBrowser": "chrome",
 	"liveServer.settings.donotVerifyTags": true,
@@ -51,15 +54,12 @@
 
 	"git.confirmSync": false,
 
-	"polacode.transparentBackground": true,
 	"material-icon-theme.hidesExplorerArrows": true,
 
+	"livePreview.portNumber": 1811,
 	"liveSassCompile.settings.showOutputWindow": false,
 	"liveSassCompile.settings.generateMap": false,
-	// "liveSassCompile.settings.autoprefix": null,
-	"livePreview.portNumber": 1811,
 	"terminal.integrated.defaultProfile.windows": "cmd",
-	"terminal.external.windowsExec": "D:\\Program\\cmder\\Cmder.exe",
 	"terminal.integrated.profiles.windows": {
 		"cmd": {
 			"path": [
@@ -74,5 +74,6 @@
 		}
 	},
 	"terminal.integrated.cursorBlinking": true,
-	"terminal.integrated.cursorStyle": "line"
+	"terminal.integrated.cursorStyle": "line",
+	"extensions.autoUpdate": "onlyEnabledExtensions"
 }
