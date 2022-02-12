@@ -25,7 +25,7 @@
 
 	"liveServer.settings.CustomBrowser": "chrome",
 	"liveServer.settings.donotVerifyTags": true,
-	"liveServer.settings.fullReload": false,
+	"liveServer.settings.fullReload": true,
 	"liveServer.settings.donotShowInfoMsg": true,
 
 	"html.format.indentInnerHtml": true,
@@ -39,26 +39,22 @@
 	"prettier.useTabs": true,
 
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.startupEditor": "none",
-	"workbench.editor.enablePreview": false,
-	"workbench.colorTheme": "Dracula darker contrast",
-
 	"vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
-	"extensions.ignoreRecommendations": true,
 
-	"livePreview.notifyOnOpenLooseFile": false,
-	"livePreview.serverKeepAliveAfterEmbeddedPreviewClose": 10,
-	"livePreview.autoRefreshPreview": "On Changes to Saved Files",
+	"extensions.ignoreRecommendations": true,
+	"extensions.autoUpdate": "onlyEnabledExtensions",
 
 	"git.confirmSync": false,
 
 	"material-icon-theme.hidesExplorerArrows": true,
 
-	"livePreview.portNumber": 1811,
 	"liveSassCompile.settings.showOutputWindow": false,
 	"liveSassCompile.settings.generateMap": false,
+	"livePreview.portNumber": 1811,
+	"livePreview.notifyOnOpenLooseFile": false,
+	"livePreview.serverKeepAliveAfterEmbeddedPreviewClose": 10,
+	"livePreview.autoRefreshPreview": "On Changes to Saved Files",
+
 	"terminal.integrated.defaultProfile.windows": "cmd",
 	"terminal.integrated.profiles.windows": {
 		"cmd": {
@@ -75,7 +71,15 @@
 	},
 	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.cursorStyle": "line",
-	"extensions.autoUpdate": "onlyEnabledExtensions"
+
+	"workbench.colorTheme": "Dracula darker contrast",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.startupEditor": "none",
+	"workbench.editor.enablePreview": false,
+
+	"tabnine.experimentalAutoImports": true,
+	"files.autoSave": "afterDelay",
+	"window.zoomLevel": 1
 
 	// "indentRainbow.colors": [
 	// 	"#fec5bb",

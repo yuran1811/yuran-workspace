@@ -58,7 +58,5 @@
 
 ### Others
 
--   [**GitLens**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
--   [**Polacode**](https://marketplace.visualstudio.com/items?itemName=pnp.polacode)
 -   [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 -   [**Sublime Text Keymap**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)

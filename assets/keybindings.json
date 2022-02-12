@@ -281,5 +281,15 @@
 		"key": "alt+l alt+c",
 		"command": "-extension.liveServer.goOffline",
 		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+k shift+r",
+		"command": "workbench.action.reloadWindow",
+		"when": "-"
+	},
+	{
+		"key": "ctrl+r",
+		"command": "-workbench.action.reloadWindow",
+		"when": "isDevelopment"
 	}
 ]
