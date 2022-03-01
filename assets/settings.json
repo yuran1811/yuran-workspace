@@ -50,6 +50,13 @@
 
 	"liveSassCompile.settings.showOutputWindow": false,
 	"liveSassCompile.settings.generateMap": false,
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"extensionName": ".css",
+			"savePath": "~../css"
+		}
+	],
 	"livePreview.portNumber": 1811,
 	"livePreview.notifyOnOpenLooseFile": false,
 	"livePreview.serverKeepAliveAfterEmbeddedPreviewClose": 10,
@@ -79,7 +86,9 @@
 
 	"tabnine.experimentalAutoImports": true,
 	"files.autoSave": "afterDelay",
-	"window.zoomLevel": 1
+	"window.zoomLevel": 1,
+	"C_Cpp.autoAddFileAssociations": false,
+	"html-to-css-autocompletion.autocompletionFilesScope": "workspace"
 
 	// "indentRainbow.colors": [
 	// 	"#fec5bb",
