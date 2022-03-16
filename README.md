@@ -2,7 +2,7 @@
 
 ## About
 
-### My Theme setting is based on [**Evondev gradient.css**](https://github.com/evondev/evondev-dracula/blob/master/gradient.css) and [**my gradient.css here**](assets/gradient.css)
+### My Theme setting is based on [**Evondev gradient.css**](https://github.com/evondev/evondev-dracula/blob/master/gradient.css) and [**my gradient.css here**](assets/css/gradient.css)
 
 ---
 
@@ -18,7 +18,11 @@
 
 #### Open "settings.json" and add the file path of "gradient.css" like this:
 
-![File Path](assets/filepath.png)
+<!-- ![File Path](assets/filepath.png) -->
+
+```json
+"vscode_custom_css.imports": ["file:///D:/vscode/gradient.css"],
+```
 
 ### Step 3: Apply the "gradient.css" to VSCode and fix "Unsupported"
 
