@@ -45,7 +45,6 @@
 
 ### Live
 
--   [**Live Preview**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server)
 -   [**Live SASS Compiler**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 
 ### Auto
