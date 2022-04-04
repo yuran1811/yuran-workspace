@@ -1,8 +1,5 @@
-:root {
-	--gradient-dir1: 45deg;
-	--gradient-dir2: 90deg;
-	--gradient-dir3: -45deg;
-}
+@import 'variables';
+@import 'animation';
 
 .mtk {
 	&3 {
@@ -88,6 +85,7 @@
 		-webkit-text-fill-color: transparent;
 	}
 }
+
 .monaco {
 	&-workbench {
 		.activitybar > .content :not(.monaco-menu) > .monaco-action-bar {
@@ -170,50 +168,12 @@
 		width: 3px;
 	}
 }
+
 div {
 	&.active-line-numbers {
 		color: white;
 	}
 	&.line-numbers {
 		color: rgb(175, 175, 175);
-	}
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-@keyframes gradient-down {
-	0% {
-		background-position: 50% 0%;
-	}
-	50% {
-		background-position: 50% 100%;
-	}
-	100% {
-		background-position: 50% 0%;
-	}
-}
-@keyframes left-to-right {
-	from {
-		background-image: linear-gradient(to left, #fc6c8f, #ff2ced);
-	}
-	to {
-		background-image: linear-gradient(to right, #fc6c8f, #ff2ced);
-	}
-}
-@keyframes top-to-bottom {
-	from {
-		background-image: linear-gradient(to top, #fc6c8f, #ff2ced);
-	}
-	to {
-		background-image: linear-gradient(to bottom, #fc6c8f, #ff2ced);
 	}
 }

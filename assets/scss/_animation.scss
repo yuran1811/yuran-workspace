@@ -1,0 +1,41 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient-down {
+	0% {
+		background-position: 50% 0%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+}
+
+@keyframes left-to-right {
+	from {
+		background-image: linear-gradient(to left, #fc6c8f, #ff2ced);
+	}
+	to {
+		background-image: linear-gradient(to right, #fc6c8f, #ff2ced);
+	}
+}
+
+@keyframes top-to-bottom {
+	from {
+		background-image: linear-gradient(to top, #fc6c8f, #ff2ced);
+	}
+	to {
+		background-image: linear-gradient(to bottom, #fc6c8f, #ff2ced);
+	}
+}
