@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
 	{
 		"key": "alt+l alt+l",
@@ -291,5 +290,15 @@
 		"key": "ctrl+r",
 		"command": "-workbench.action.reloadWindow",
 		"when": "isDevelopment"
+	},
+	{
+		"key": "shift+alt+o",
+		"command": "editor.action.organizeImports",
+		"when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+	},
+	{
+		"key": "shift+alt+o",
+		"command": "-editor.action.organizeImports",
+		"when": "editorTextFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
 	}
 ]

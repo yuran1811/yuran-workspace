@@ -19,24 +19,26 @@
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.lineHeight": 1.7,
 	"editor.suggest.preview": true,
+	"editor.cursorBlinking": "solid",
+	"editor.cursorWidth": 2,
 
 	"javascript.inlayHints.parameterNames.enabled": "all",
 	"typescript.inlayHints.parameterNames.enabled": "all",
 
 	"liveServer.settings.CustomBrowser": "chrome",
-	"liveServer.settings.donotVerifyTags": true,
-	"liveServer.settings.fullReload": true,
 	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true,
+	// "liveServer.settings.fullReload": true,
 
-	"html.format.indentInnerHtml": true,
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
+	"html.format.indentInnerHtml": true,
 	"security.workspace.trust.untrustedFiles": "open",
 
-	"prettier.singleQuote": true,
 	"prettier.endOfLine": "auto",
-	"prettier.tabWidth": 4,
+	"prettier.singleQuote": true,
 	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
 
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
@@ -48,6 +50,7 @@
 
 	"material-icon-theme.hidesExplorerArrows": true,
 
+	// "liveSassCompile.settings.autoprefix": null,
 	"liveSassCompile.settings.showOutputWindow": false,
 	"liveSassCompile.settings.generateMap": false,
 	"liveSassCompile.settings.formats": [
@@ -76,30 +79,21 @@
 			"source": "Git Bash"
 		}
 	},
-	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.enableMultiLinePasteWarning": false,
 
-	"workbench.colorTheme": "Dracula darker contrast",
+	"workbench.colorTheme": "Evondev Dracula Darker Contrast",
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.startupEditor": "none",
 	"workbench.editor.enablePreview": false,
+	"workbench.startupEditor": "none",
 
-	"tabnine.experimentalAutoImports": true,
 	"files.autoSave": "afterDelay",
-	"window.zoomLevel": 1,
-	"C_Cpp.autoAddFileAssociations": false,
-	"html-to-css-autocompletion.autocompletionFilesScope": "workspace"
-
-	// "indentRainbow.colors": [
-	// 	"#fec5bb",
-	// 	"#fcd5ce",
-	// 	"#fae1dd",
-	// 	"#f8edeb",
-	// 	"#e8e8e4",
-	// 	"#d8e2dc",
-	// 	"#ece4db",
-	// 	"#ffe5d9",
-	// 	"#ffd7ba",
-	// 	"#fec89a"
-	// ]
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"html-to-css-autocompletion.autocompletionFilesScope": "workspace",
+	"window.zoomLevel": 0.7,
+	"vsintellicode.features.apiExamples": "enabled",
+	"vsintellicode.features.python.deepLearning": "enabled",
+	"vsintellicode.java.completionsEnabled": false,
+	"vsintellicode.python.completionsEnabled": false
 }
