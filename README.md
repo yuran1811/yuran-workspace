@@ -63,3 +63,14 @@
 
 -   [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 -   [**Sublime Text Keymap**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+
+-   ZSH Terminal ([**More info**](https://amitgujar15.medium.com/customize-your-git-bash-like-this-d969c68abfdb))
+    1.  Install [**Git**](https://git-scm.com/downloads)
+    2.  Extract [**this zip**](./assets/zstd-v1.5.2-win64.zip)
+    3.  Extract "zsh.pkg.tar" inside the Git Installation Directory
+    4.  Use "Git Bash" to install oh-my-zsh:
+        ```
+        sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        ```
+    5.  Copy .zshrc content from [**here**](./assets/.zshrc)
+    6.  Enjoy ZSH!!!
