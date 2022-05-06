@@ -105,10 +105,10 @@ source $ZSH/oh-my-zsh.sh
 # exec zsh
 # fi
 
-function gps() {
-	gaa
-	gcmsg "$1"
-	gp
+function ygp() {
+	git add .
+	git commit -m "$1"
+	git push
 }
 
 function cpp() {
