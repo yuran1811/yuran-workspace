@@ -50,7 +50,6 @@
 ### Auto
 
 -   [**CSS Peek**](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
--   [**Auto Rename Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 -   [**Visual Studio IntelliCode**](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
 -   [**HTML to CSS autocompletion**](https://marketplace.visualstudio.com/items?itemName=solnurkarim.html-to-css-autocompletion)
 
@@ -63,14 +62,12 @@
 
 -   [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 -   [**Sublime Text Keymap**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
-
--   ZSH Terminal ([**More info**](https://amitgujar15.medium.com/customize-your-git-bash-like-this-d969c68abfdb))
+-   ZSH ([**More info**](https://amitgujar15.medium.com/customize-your-git-bash-like-this-d969c68abfdb))
     1.  Install [**Git**](https://git-scm.com/downloads)
-    2.  Extract [**this zip**](./assets/zstd-v1.5.2-win64.zip)
-    3.  Extract "zsh.pkg.tar" inside the Git Installation Directory
-    4.  Use "Git Bash" to install oh-my-zsh:
+    2.  Extract [**ZSH Installation**](./assets/zsh.pkg.tar) inside the Git Installation Directory
+    3.  Use "Git Bash" to install oh-my-zsh:
         ```
         sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         ```
-    5.  Copy .zshrc content from [**here**](./assets/.zshrc)
-    6.  Enjoy ZSH!!!
+    4.  Copy .zshrc content from [**here**](./assets/.zshrc)
+    5.  Enjoy ZSH!!!
