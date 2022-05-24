@@ -4,7 +4,7 @@
 	"window.autoDetectColorScheme": true,
 
 	"editor.bracketPairColorization.enabled": true,
-	"editor.codeActionsOnSave": { "source.organizeImports": true },
+	// "editor.codeActionsOnSave": { "source.organizeImports": true },
 	"editor.codeLensFontFamily": "Fira Code",
 	"editor.cursorBlinking": "solid",
 	"editor.cursorWidth": 2,
@@ -80,6 +80,11 @@
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.enableMultiLinePasteWarning": false,
 
+	"workbench.colorTheme": "Evondev Dracula Darker Contrast",
+	"workbench.editor.enablePreview": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.startupEditor": "none",
+
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"files.autoSave": "afterDelay",
@@ -87,7 +92,12 @@
 		"*.ejs": "html"
 	},
 
-	"html-to-css-autocompletion.autocompletionFilesScope": "workspace",
+	"html-to-css-autocompletion.autocompletionFilesScope": "linked-files",
+	"html-to-css-autocompletion.getSelectorsFromFileTypes": [
+		"html",
+		"php",
+		"ejs"
+	],
 	"html.autoClosingTags": true,
 	"html.format.indentInnerHtml": true,
 
@@ -99,10 +109,6 @@
 
 	"vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
 
-	"workbench.colorTheme": "Evondev Dracula Darker Contrast",
-	"workbench.editor.enablePreview": false,
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.startupEditor": "none",
 	// More theme: https://glitchbone.github.io/vscode-base16-term/#/tomorrow-night
 	"workbench.colorCustomizations": {
 		"terminal.ansiBlack": "#282C34",

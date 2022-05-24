@@ -1,4 +1,3 @@
-// Place your key bindings in this file to override the defaults
 [
 	{
 		"key": "alt+l alt+l",
@@ -305,5 +304,20 @@
 	{
 		"key": "f9",
 		"command": "editor.action.sortLinesAscending"
+	},
+	{
+		"key": "ctrl+k ctrl+alt+s",
+		"command": "-git.stageSelectedRanges",
+		"when": "isInDiffEditor"
+	},
+	{
+		"key": "ctrl+k ctrl+n",
+		"command": "-git.unstageSelectedRanges",
+		"when": "isInDiffEditor"
+	},
+	{
+		"key": "ctrl+k ctrl+r",
+		"command": "-git.revertSelectedRanges",
+		"when": "isInDiffEditor"
 	}
 ]
