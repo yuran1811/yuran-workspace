@@ -9,6 +9,9 @@ autoload -Uz bracketed-paste-magic
 zle -N bracketed-paste bracketed-paste-magic
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
+# Automatic update without confirmation prompt
+zstyle ':omz:update' mode auto
+
 # npm command
 ni() { npm i $1 }
 nig() { npm i -g $1 }
@@ -26,3 +29,5 @@ cls() { clear }
 source $ZSH/oh-my-zsh.sh
 # source $ZSH/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

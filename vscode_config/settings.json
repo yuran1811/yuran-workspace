@@ -1,7 +1,8 @@
 {
 	"debug.onTaskErrors": "abort",
-
+	"window.menuBarVisibility": "compact",
 	"window.autoDetectColorScheme": true,
+	"security.workspace.trust.untrustedFiles": "open",
 
 	"editor.bracketPairColorization.enabled": true,
 	// "editor.codeActionsOnSave": { "source.organizeImports": true },
@@ -12,32 +13,32 @@
 	"editor.definitionLinkOpensInPeek": true,
 	"editor.fontFamily": "'Fira Code'",
 	"editor.fontLigatures": true,
-	"editor.formatOnPaste": true,
+	// "editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
-	"editor.formatOnType": false,
+	// "editor.formatOnType": false,
 	"editor.insertSpaces": false,
-	"editor.lineHeight": 1.7,
+	"editor.lineHeight": 1.6,
 	"editor.linkedEditing": true,
 	"editor.minimap.enabled": false,
 	"editor.multiCursorModifier": "ctrlCmd",
 	"editor.renderWhitespace": "none",
 	"editor.suggest.preview": true,
-	"editor.suggestSelection": "first",
+	"editor.suggestSelection": "recentlyUsedByPrefix",
 	"editor.wordWrap": "on",
 
 	"javascript.autoClosingTags": true,
-	"javascript.inlayHints.parameterNames.enabled": "all",
+	"javascript.inlayHints.parameterNames.enabled": "none",
 	"javascript.suggest.autoImports": true,
 	"javascript.updateImportsOnFileMove.enabled": "always",
 
 	"typescript.autoClosingTags": true,
-	"typescript.inlayHints.parameterNames.enabled": "all",
+	"typescript.inlayHints.parameterNames.enabled": "none",
 	"typescript.suggest.autoImports": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
 
-	"security.workspace.trust.untrustedFiles": "open",
-
 	"prettier.endOfLine": "auto",
+	"prettier.jsxSingleQuote": true,
+	"prettier.printWidth": 120,
 	"prettier.singleQuote": true,
 	"prettier.tabWidth": 4,
 	"prettier.useTabs": true,
@@ -46,45 +47,6 @@
 	"extensions.ignoreRecommendations": true,
 
 	"git.confirmSync": false,
-
-	"material-icon-theme.hidesExplorerArrows": true,
-
-	"liveServer.settings.CustomBrowser": "chrome",
-	"liveServer.settings.donotShowInfoMsg": true,
-	"liveServer.settings.donotVerifyTags": true,
-	// "liveServer.settings.fullReload": true,
-	// "liveSassCompile.settings.autoprefix": null,
-	"liveSassCompile.settings.showOutputWindow": false,
-	"liveSassCompile.settings.generateMap": false,
-	"liveSassCompile.settings.formats": [
-		{
-			"format": "compressed",
-			"extensionName": ".css",
-			"savePath": "~../css"
-		}
-	],
-
-	"terminal.integrated.defaultProfile.windows": "Bash",
-	"terminal.integrated.profiles.windows": {
-		"cmd": {
-			"path": [
-				"${env:windir}\\Sysnative\\cmd.exe",
-				"${env:windir}\\System32\\cmd.exe"
-			],
-			"args": [],
-			"icon": "terminal-cmd"
-		},
-		"Bash": { "path": "D:\\Program\\Git\\bin\\bash.exe" }
-	},
-	"terminal.integrated.cursorBlinking": true,
-	"terminal.integrated.cursorStyle": "line",
-	"terminal.integrated.enableMultiLinePasteWarning": false,
-
-	"workbench.colorTheme": "Evondev Dracula Darker Contrast",
-	"workbench.editor.enablePreview": false,
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.startupEditor": "none",
-
 	"explorer.confirmDelete": false,
 	"explorer.confirmDragAndDrop": false,
 	"files.autoSave": "afterDelay",
@@ -92,16 +54,49 @@
 		"*.ejs": "html"
 	},
 
-	"html-to-css-autocompletion.autocompletionFilesScope": "linked-files",
-	"html-to-css-autocompletion.getSelectorsFromFileTypes": [
-		"html",
-		"php",
-		"ejs"
+	"material-icon-theme.activeIconPack": "react",
+	"material-icon-theme.hidesExplorerArrows": true,
+	"material-icon-theme.showWelcomeMessage": false,
+
+	"liveServer.settings.CustomBrowser": "chrome",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true,
+	"liveServer.settings.fullReload": false,
+
+	// "liveSassCompile.settings.autoprefix": null,
+	"liveSassCompile.settings.showOutputWindowOn": "None",
+	"liveSassCompile.settings.generateMap": false,
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"extensionName": ".css",
+			// "savePath": "~../css"
+			"savePath": "~"
+		}
 	],
+
+	"terminal.integrated.cursorBlinking": false,
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.defaultProfile.windows": "Bash",
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"terminal.integrated.profiles.windows": {
+		"cmd": {
+			"path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Bash": {
+			"path": "D:\\Program\\Git\\bin\\bash.exe"
+		}
+	},
+
+	"html-to-css-autocompletion.autocompletionFilesScope": "workspace",
+	"html-to-css-autocompletion.getSelectorsFromFileTypes": ["html", "php", "ejs", "jsx", "tsx"],
 	"html.autoClosingTags": true,
 	"html.format.indentInnerHtml": true,
 
 	"vsintellicode.features.apiExamples": "enabled",
+	"vsintellicode.features.apiExamplests": "enabled",
 	"vsintellicode.features.python.deepLearning": "enabled",
 	"vsintellicode.java.completionsEnabled": false,
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -130,5 +125,14 @@
 		"terminal.foreground": "#ABB2BF",
 		"terminalCursor.background": "#ABB2BF",
 		"terminalCursor.foreground": "#ABB2BF"
-	}
+	},
+	"workbench.colorTheme": "Evondev Dracula Darker Contrast",
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.untitled.hint": "hidden",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.startupEditor": "none",
+
+	"reactSnippets.settings.typescriptPropsStatePrefix": "interface",
+	"tailwindCSS.emmetCompletions": true,
+	"importCost.fontStyle": "italic"
 }
