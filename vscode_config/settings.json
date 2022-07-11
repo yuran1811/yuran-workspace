@@ -70,8 +70,7 @@
 		{
 			"format": "compressed",
 			"extensionName": ".css",
-			// "savePath": "~../css"
-			"savePath": "~"
+			"savePath": "~../css"
 		}
 	],
 
@@ -79,6 +78,8 @@
 	"terminal.integrated.cursorStyle": "line",
 	"terminal.integrated.defaultProfile.windows": "Bash",
 	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"terminal.integrated.shellIntegration.enabled": true,
+	"terminal.integrated.shellIntegration.history": 10,
 	"terminal.integrated.profiles.windows": {
 		"cmd": {
 			"path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
@@ -133,6 +134,10 @@
 	"workbench.startupEditor": "none",
 
 	"reactSnippets.settings.typescriptPropsStatePrefix": "interface",
+	"importCost.fontStyle": "italic",
+
 	"tailwindCSS.emmetCompletions": true,
-	"importCost.fontStyle": "italic"
+	"tailwindCSS.lint.invalidScreen": "warning",
+	"tailwindCSS.lint.invalidTailwindDirective": "warning",
+	"tailwindCSS.lint.invalidVariant": "warning"
 }

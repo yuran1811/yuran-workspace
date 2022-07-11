@@ -1,12 +1,8 @@
-# Yuran Workspace - VSCode Config
-
-## About
-
-### My Theme setting is based on [**Evondev gradient.css**](https://github.com/evondev/evondev-dracula/blob/master/gradient.css) and [**my own gradient.css**](./css/gradient.css)
+# VSCode Config
 
 ---
 
-## Setting Theme Steps
+## Installation
 
 ### Step 1: Install needed extensions
 
@@ -40,31 +36,29 @@
 	3: Type "Fix Checksums: Apply" -> Enter
 ```
 
-### Step 4: Done! Open your code and enjoy!!!
+### Step 4: Done!
 
-## Extensions for Web Dev:
+## Extensions:
 
-### Snippet
+### Automation
 
--   [**Evondev Snippets**](https://marketplace.visualstudio.com/items?itemName=evondev.evondev-snippets)
--   [**JavaScript Snippet Pack**](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-javascript-snippet-pack)
+-   Auto Rename Tag (Jun Han)
+-   Console Flash (napthedev)
+-   CSS Peek (Pranay Prakash)
+-   HTML to CSS autocompletion (solnurkarim)
+-   IntelliCode (Microsoft)
+-   Live SASS Compiler (Glenn Marks)
 
-### Live
+### Personalization
 
--   [**Live SASS Compiler**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
-
-### Auto
-
--   [**CSS Peek**](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
--   [**Visual Studio IntelliCode**](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode)
--   [**HTML to CSS autocompletion**](https://marketplace.visualstudio.com/items?itemName=solnurkarim.html-to-css-autocompletion)
-
-### Theme
-
--   [**Evondev Dracula**](https://marketplace.visualstudio.com/items?itemName=evondev.dracula-high-contrast)
--   [**Material Icon Theme**](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+-   Evondev Dracula
+-   Material Icon Theme (Philipp Kief)
 
 ### Others
 
--   [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
--   [**Sublime Text Keymap**](https://marketplace.visualstudio.com/items?itemName=ms-vscode.sublime-keybindings)
+-   Evondev Snippets
+-   Prettier
+-   Sublime Text Keymap
+-   REST Client (Huachao Mao)
+-   Tailwind CSS IntelliSense
+-   Import Cost (Wix)
