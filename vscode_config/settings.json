@@ -51,7 +51,14 @@
 	"explorer.confirmDragAndDrop": false,
 	"files.autoSave": "afterDelay",
 	"files.associations": {
-		"*.ejs": "html"
+		"*.ejs": "html",
+		"*.postcss": "css",
+		"*.cjs": "javascript",
+		"*.mjs": "javascript",
+		"*.css": "css"
+	},
+	"[postcss]": {
+		"editor.inlayHints.enabled": "on"
 	},
 
 	"material-icon-theme.activeIconPack": "react",
