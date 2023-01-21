@@ -6,9 +6,9 @@
 
 ### Step 1: Install needed extensions
 
--   [**Custom CSS and JS Loader**](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)
--   [**Evondev Dracula**](https://marketplace.visualstudio.com/items?itemName=evondev.dracula-high-contrast)
--   [**Fix VSCode Checksums**](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums)
+- [**Custom CSS and JS Loader**](https://marketplace.visualstudio.com/items?itemName=be5invis.vscode-custom-css)
+- [**Evondev Dracula**](https://marketplace.visualstudio.com/items?itemName=evondev.dracula-high-contrast)
+- [**Fix VSCode Checksums**](https://marketplace.visualstudio.com/items?itemName=lehni.vscode-fix-checksums)
 
 ### Step 2: Add the file path of "gradient.css" to "settings.json"
 
@@ -42,23 +42,34 @@
 
 ### Automation
 
--   Auto Rename Tag (Jun Han)
--   Console Flash (napthedev)
--   CSS Peek (Pranay Prakash)
--   HTML to CSS autocompletion (solnurkarim)
--   IntelliCode (Microsoft)
--   Live SASS Compiler (Glenn Marks)
+- Auto Rename Tag (Jun Han)
+- Console Flash (napthedev)
+- CSS Peek (Pranay Prakash)
+- HTML to CSS autocompletion (solnurkarim)
+- IntelliCode (Microsoft)
+- Live SASS Compiler (Glenn Marks)
+- ESLint (Microsoft)
 
 ### Personalization
 
--   Evondev Dracula
--   Material Icon Theme (Philipp Kief)
+- Evondev Dracula
+- Material Icon Theme (Philipp Kief)
 
 ### Others
 
--   Evondev Snippets
--   Prettier
--   Sublime Text Keymap
--   REST Client (Huachao Mao)
--   Tailwind CSS IntelliSense
--   Import Cost (Wix)
+- Evondev Snippets
+- Prettier
+- Sublime Text Keymap
+- REST Client (Huachao Mao)
+- Tailwind CSS IntelliSense
+- Import Cost (Wix)
+
+#### C++
+
+- C/C++ (Microsoft)
+- Better C++ Syntax (Jeff Hykin)
+
+#### Shader Editor
+
+- Shader languages support for VS Code (slevesque)
+- WebGL GLSL Editor (Rácz Zalán)

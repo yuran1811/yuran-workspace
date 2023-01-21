@@ -1,150 +1,177 @@
 {
-	"debug.onTaskErrors": "abort",
-	"window.menuBarVisibility": "compact",
-	"window.autoDetectColorScheme": true,
-	"security.workspace.trust.untrustedFiles": "open",
+  "debug.onTaskErrors": "abort",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.autoDetectColorScheme": true,
 
-	"editor.bracketPairColorization.enabled": true,
-	// "editor.codeActionsOnSave": { "source.organizeImports": true },
-	"editor.codeLensFontFamily": "Fira Code",
-	"editor.cursorBlinking": "solid",
-	"editor.cursorWidth": 2,
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.definitionLinkOpensInPeek": true,
-	"editor.fontFamily": "'Fira Code'",
-	"editor.fontLigatures": true,
-	// "editor.formatOnPaste": true,
-	"editor.formatOnSave": true,
-	// "editor.formatOnType": false,
-	"editor.insertSpaces": false,
-	"editor.lineHeight": 1.6,
-	"editor.linkedEditing": true,
-	"editor.minimap.enabled": false,
-	"editor.multiCursorModifier": "ctrlCmd",
-	"editor.renderWhitespace": "none",
-	"editor.suggest.preview": true,
-	"editor.suggestSelection": "recentlyUsedByPrefix",
-	"editor.wordWrap": "on",
+  "markdown.updateLinksOnFileMove.enabled": "always",
+  "markdown.validate.enabled": true,
 
-	"javascript.autoClosingTags": true,
-	"javascript.inlayHints.parameterNames.enabled": "none",
-	"javascript.suggest.autoImports": true,
-	"javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
 
-	"typescript.autoClosingTags": true,
-	"typescript.inlayHints.parameterNames.enabled": "none",
-	"typescript.suggest.autoImports": true,
-	"typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "[Rouge]": {
+      "enabled": true,
+      "rules": {
+        "*.declaration": { "bold": true }
+      }
+    }
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeLensFontFamily": "Fira Code",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorWidth": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.definitionLinkOpensInPeek": true,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.insertSpaces": false,
+  "editor.lineHeight": 1.6,
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "none",
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyTabStops": true,
+  "editor.suggest.preview": true,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.wordWrap": "on",
+  // "editor.codeActionsOnSave": { "source.organizeImports": true },
 
-	"prettier.endOfLine": "auto",
-	"prettier.jsxSingleQuote": true,
-	"prettier.printWidth": 120,
-	"prettier.singleQuote": true,
-	"prettier.tabWidth": 4,
-	"prettier.useTabs": true,
+  "javascript.autoClosingTags": true,
+  "javascript.inlayHints.parameterNames.enabled": "none",
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 
-	"extensions.autoUpdate": "onlyEnabledExtensions",
-	"extensions.ignoreRecommendations": true,
+  "typescript.autoClosingTags": true,
+  "typescript.inlayHints.parameterNames.enabled": "none",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
 
-	"git.confirmSync": false,
-	"explorer.confirmDelete": false,
-	"explorer.confirmDragAndDrop": false,
-	"files.autoSave": "afterDelay",
-	"files.associations": {
-		"*.ejs": "html",
-		"*.postcss": "css",
-		"*.cjs": "javascript",
-		"*.mjs": "javascript",
-		"*.css": "css"
-	},
-	"[postcss]": {
-		"editor.inlayHints.enabled": "on"
-	},
+  "prettier.endOfLine": "auto",
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
 
-	"material-icon-theme.activeIconPack": "react",
-	"material-icon-theme.hidesExplorerArrows": true,
-	"material-icon-theme.showWelcomeMessage": false,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "extensions.ignoreRecommendations": true,
 
-	"liveServer.settings.CustomBrowser": "chrome",
-	"liveServer.settings.donotShowInfoMsg": true,
-	"liveServer.settings.donotVerifyTags": true,
-	"liveServer.settings.fullReload": false,
+  "git.confirmSync": false,
+  "files.autoSave": "afterDelay",
+  "files.associations": {
+    "*.ejs": "html",
+    "*.postcss": "scss",
+    "*.cjs": "javascript",
+    "*.mjs": "javascript",
+    "*.css": "postcss",
+    "*.shader": "glsl"
+  },
+  "[postcss]": {
+    "editor.inlayHints.enabled": "on"
+  },
 
-	// "liveSassCompile.settings.autoprefix": null,
-	"liveSassCompile.settings.showOutputWindowOn": "None",
-	"liveSassCompile.settings.generateMap": false,
-	"liveSassCompile.settings.formats": [
-		{
-			"format": "compressed",
-			"extensionName": ".css",
-			"savePath": "~../css"
-		}
-	],
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.fullReload": false,
 
-	"terminal.integrated.cursorBlinking": false,
-	"terminal.integrated.cursorStyle": "line",
-	"terminal.integrated.defaultProfile.windows": "Bash",
-	"terminal.integrated.enableMultiLinePasteWarning": false,
-	"terminal.integrated.shellIntegration.enabled": true,
-	"terminal.integrated.shellIntegration.history": 10,
-	"terminal.integrated.profiles.windows": {
-		"cmd": {
-			"path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
-			"args": [],
-			"icon": "terminal-cmd"
-		},
-		"Bash": {
-			"path": "D:\\Program\\Git\\bin\\bash.exe"
-		}
-	},
+  "liveSassCompile.settings.autoprefix": null,
+  "liveSassCompile.settings.showOutputWindowOn": "None",
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "~../css"
+    }
+  ],
 
-	"html-to-css-autocompletion.autocompletionFilesScope": "workspace",
-	"html-to-css-autocompletion.getSelectorsFromFileTypes": ["html", "php", "ejs", "jsx", "tsx"],
-	"html.autoClosingTags": true,
-	"html.format.indentInnerHtml": true,
+  "terminal.integrated.cursorBlinking": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "Bash",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.shellIntegration.history": 10,
+  "terminal.integrated.profiles.windows": {
+    "cmd": {
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Bash": {
+      "path": "D:\\Program\\Git\\bin\\bash.exe"
+    }
+  },
 
-	"vsintellicode.features.apiExamples": "enabled",
-	"vsintellicode.features.apiExamplests": "enabled",
-	"vsintellicode.features.python.deepLearning": "enabled",
-	"vsintellicode.java.completionsEnabled": false,
-	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-	"vsintellicode.python.completionsEnabled": false,
+  "html-to-css-autocompletion.autocompletionFilesScope": "workspace",
+  "html-to-css-autocompletion.getSelectorsFromFileTypes": ["html", "php", "ejs", "jsx", "tsx"],
+  "html.autoClosingTags": true,
+  "html.format.indentInnerHtml": true,
 
-	"vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
+  "vsintellicode.features.python.deepLearning": "enabled",
+  "vsintellicode.java.completionsEnabled": false,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsintellicode.python.completionsEnabled": false,
 
-	// More theme: https://glitchbone.github.io/vscode-base16-term/#/tomorrow-night
-	"workbench.colorCustomizations": {
-		"terminal.ansiBlack": "#282C34",
-		"terminal.ansiBlue": "#61AFEF",
-		"terminal.ansiBrightBlack": "#545862",
-		"terminal.ansiBrightBlue": "#61AFEF",
-		"terminal.ansiBrightCyan": "#56B6C2",
-		"terminal.ansiBrightGreen": "#98C379",
-		"terminal.ansiBrightMagenta": "#C678DD",
-		"terminal.ansiBrightRed": "#E06C75",
-		"terminal.ansiBrightWhite": "#C8CCD4",
-		"terminal.ansiBrightYellow": "#E5C07B",
-		"terminal.ansiCyan": "#56B6C2",
-		"terminal.ansiGreen": "#98C379",
-		"terminal.ansiMagenta": "#C678DD",
-		"terminal.ansiRed": "#E06C75",
-		"terminal.ansiWhite": "#ABB2BF",
-		"terminal.ansiYellow": "#E5C07B",
-		"terminal.foreground": "#ABB2BF",
-		"terminalCursor.background": "#ABB2BF",
-		"terminalCursor.foreground": "#ABB2BF"
-	},
-	"workbench.colorTheme": "Evondev Dracula Darker Contrast",
-	"workbench.editor.enablePreview": false,
-	"workbench.editor.untitled.hint": "hidden",
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.startupEditor": "none",
+  "vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
 
-	"reactSnippets.settings.typescriptPropsStatePrefix": "interface",
-	"importCost.fontStyle": "italic",
+  // More theme: https://glitchbone.github.io/vscode-base16-term/#/tomorrow-night
+  "workbench.colorCustomizations": {
+    "terminal.ansiBlack": "#282C34",
+    "terminal.ansiBlue": "#61AFEF",
+    "terminal.ansiBrightBlack": "#545862",
+    "terminal.ansiBrightBlue": "#61AFEF",
+    "terminal.ansiBrightCyan": "#56B6C2",
+    "terminal.ansiBrightGreen": "#98C379",
+    "terminal.ansiBrightMagenta": "#C678DD",
+    "terminal.ansiBrightRed": "#E06C75",
+    "terminal.ansiBrightWhite": "#C8CCD4",
+    "terminal.ansiBrightYellow": "#E5C07B",
+    "terminal.ansiCyan": "#56B6C2",
+    "terminal.ansiGreen": "#98C379",
+    "terminal.ansiMagenta": "#C678DD",
+    "terminal.ansiRed": "#E06C75",
+    "terminal.ansiWhite": "#ABB2BF",
+    "terminal.ansiYellow": "#E5C07B",
+    "terminal.foreground": "#ABB2BF",
+    "terminalCursor.background": "#ABB2BF",
+    "terminalCursor.foreground": "#ABB2BF"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
 
-	"tailwindCSS.emmetCompletions": true,
-	"tailwindCSS.lint.invalidScreen": "warning",
-	"tailwindCSS.lint.invalidTailwindDirective": "warning",
-	"tailwindCSS.lint.invalidVariant": "warning"
+  "material-icon-theme.activeIconPack": "react",
+  "material-icon-theme.hidesExplorerArrows": true,
+
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.lint.invalidScreen": "warning",
+  "tailwindCSS.lint.invalidTailwindDirective": "warning",
+  "tailwindCSS.lint.invalidVariant": "warning",
+
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+
+  "reactSnippets.settings.typescriptPropsStatePrefix": "interface",
+  "webgl-glsl-editor.format.placeSpaceAfterKeywords": true,
+  "workbench.colorTheme": "Evondev Dracula Darker Contrast"
 }
