@@ -5,3 +5,4 @@
 - [**VSCode Config**](./vscode_config)
 - [**ZSH Config**](./zsh_config)
 - [**C++ Config**](./cpp_config)
+- [**Others Config**](./others)

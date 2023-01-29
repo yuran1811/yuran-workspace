@@ -36,6 +36,16 @@
 	3: Type "Fix Checksums: Apply" -> Enter
 ```
 
+#### Quick apply changes instead
+
+```console
+	1: Ctrl + Shift + P
+	2: Type "Enable Custom CSS and JS"
+	3: Ctrl + Shift + P
+	4: Type "Fix Checksums: Apply" -> Enter
+	5: Restart VSCode
+```
+
 ### Step 4: Done!
 
 ## Extensions:

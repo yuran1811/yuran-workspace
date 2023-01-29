@@ -37,6 +37,7 @@ tw() {
 }
 
 # Code Runner Command
+cc() { g++ $1.cc -o $1 && ./$1 && rm $1.exe }
 cpp() { g++ $1.cpp -o $1 && ./$1 && rm $1.exe }
 js() { node $1 }
 

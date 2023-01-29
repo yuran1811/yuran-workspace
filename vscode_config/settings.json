@@ -173,5 +173,8 @@
 
   "reactSnippets.settings.typescriptPropsStatePrefix": "interface",
   "webgl-glsl-editor.format.placeSpaceAfterKeywords": true,
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
   "workbench.colorTheme": "Evondev Dracula Darker Contrast"
 }
