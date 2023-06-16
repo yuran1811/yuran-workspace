@@ -34,7 +34,7 @@
   "editor.cursorWidth": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.definitionLinkOpensInPeek": true,
-  "editor.fontFamily": "'Fira Code'",
+  "editor.fontFamily": "'Fira Code', 'Agave Nerd Font Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": false,
   "editor.formatOnSave": true,
@@ -77,38 +77,27 @@
   "files.autoSave": "afterDelay",
   "files.associations": {
     "*.ejs": "html",
-    "*.postcss": "scss",
+    "*.postcss": "postcss",
     "*.cjs": "javascript",
     "*.mjs": "javascript",
-    "*.css": "postcss",
-    "*.shader": "glsl"
+    "*.css": "tailwindcss",
+    "*.shader": "glsl",
+    ".env*": "dotenv"
   },
   "[postcss]": {
     "editor.inlayHints.enabled": "on"
   },
-
-  "liveServer.settings.CustomBrowser": "chrome",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.fullReload": false,
-
-  "liveSassCompile.settings.autoprefix": null,
-  "liveSassCompile.settings.showOutputWindowOn": "None",
-  "liveSassCompile.settings.generateMap": false,
-  "liveSassCompile.settings.formats": [
-    {
-      "format": "compressed",
-      "extensionName": ".css",
-      "savePath": "~../css"
-    }
-  ],
+  // "postcss.validate": false,
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
 
   "terminal.integrated.cursorBlinking": false,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "Bash",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.shellIntegration.enabled": true,
-  "terminal.integrated.shellIntegration.history": 10,
+  "terminal.integrated.shellIntegration.history": 7,
   "terminal.integrated.profiles.windows": {
     "cmd": {
       "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
@@ -120,8 +109,6 @@
     }
   },
 
-  "html-to-css-autocompletion.autocompletionFilesScope": "workspace",
-  "html-to-css-autocompletion.getSelectorsFromFileTypes": ["html", "php", "ejs", "jsx", "tsx"],
   "html.autoClosingTags": true,
   "html.format.indentInnerHtml": true,
 
@@ -131,50 +118,50 @@
   "vsintellicode.python.completionsEnabled": false,
 
   "vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
-
-  // More theme: https://glitchbone.github.io/vscode-base16-term/#/tomorrow-night
-  "workbench.colorCustomizations": {
-    "terminal.ansiBlack": "#282C34",
-    "terminal.ansiBlue": "#61AFEF",
-    "terminal.ansiBrightBlack": "#545862",
-    "terminal.ansiBrightBlue": "#61AFEF",
-    "terminal.ansiBrightCyan": "#56B6C2",
-    "terminal.ansiBrightGreen": "#98C379",
-    "terminal.ansiBrightMagenta": "#C678DD",
-    "terminal.ansiBrightRed": "#E06C75",
-    "terminal.ansiBrightWhite": "#C8CCD4",
-    "terminal.ansiBrightYellow": "#E5C07B",
-    "terminal.ansiCyan": "#56B6C2",
-    "terminal.ansiGreen": "#98C379",
-    "terminal.ansiMagenta": "#C678DD",
-    "terminal.ansiRed": "#E06C75",
-    "terminal.ansiWhite": "#ABB2BF",
-    "terminal.ansiYellow": "#E5C07B",
-    "terminal.foreground": "#ABB2BF",
-    "terminalCursor.background": "#ABB2BF",
-    "terminalCursor.foreground": "#ABB2BF"
-  },
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
+  "[cpp]": { "editor.defaultFormatter": "xaver.clang-format" },
 
   "material-icon-theme.activeIconPack": "react",
   "material-icon-theme.hidesExplorerArrows": true,
+  "oneDarkPro.bold": true,
+  "oneDarkPro.vivid": true,
 
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.lint.invalidScreen": "warning",
   "tailwindCSS.lint.invalidTailwindDirective": "warning",
   "tailwindCSS.lint.invalidVariant": "warning",
 
-  "emmet.includeLanguages": {
-    "postcss": "css"
-  },
-
   "reactSnippets.settings.typescriptPropsStatePrefix": "interface",
   "webgl-glsl-editor.format.placeSpaceAfterKeywords": true,
-  "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+  "clang-format.executable": "D:\\Program\\clang-tools\\clang-format.exe",
+  "dotenv.enableAutocloaking": true,
+
+  // https://glitchbone.github.io/vscode-base16-term/#/tomorrow-night
+  // https://glitchbone.github.io/vscode-base16-term/#/gruvbox-dark-soft
+  "workbench.colorCustomizations": {
+    // "terminal.background": "#32302F",
+    "terminal.foreground": "#D5C4A1",
+    "terminalCursor.background": "#D5C4A1",
+    "terminalCursor.foreground": "#D5C4A1",
+    "terminal.ansiBlack": "#32302F",
+    "terminal.ansiBlue": "#83A598",
+    "terminal.ansiBrightBlack": "#665C54",
+    "terminal.ansiBrightBlue": "#83A598",
+    "terminal.ansiBrightCyan": "#8EC07C",
+    "terminal.ansiBrightGreen": "#B8BB26",
+    "terminal.ansiBrightMagenta": "#D3869B",
+    "terminal.ansiBrightRed": "#FB4934",
+    "terminal.ansiBrightWhite": "#FBF1C7",
+    "terminal.ansiBrightYellow": "#FABD2F",
+    "terminal.ansiCyan": "#8EC07C",
+    "terminal.ansiGreen": "#B8BB26",
+    "terminal.ansiMagenta": "#D3869B",
+    "terminal.ansiRed": "#FB4934",
+    "terminal.ansiWhite": "#D5C4A1",
+    "terminal.ansiYellow": "#FABD2F"
   },
-  "workbench.colorTheme": "Evondev Dracula Darker Contrast"
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "One Dark Pro Darker"
 }

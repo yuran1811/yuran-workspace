@@ -53,31 +53,40 @@
 ### Automation
 
 - Auto Rename Tag (Jun Han)
-- Console Flash (napthedev)
 - CSS Peek (Pranay Prakash)
 - HTML to CSS autocompletion (solnurkarim)
-- IntelliCode (Microsoft)
 - Live SASS Compiler (Glenn Marks)
-- ESLint (Microsoft)
 
 ### Personalization
 
-- Evondev Dracula
+- Evondev Dracula (evondev)
 - Material Icon Theme (Philipp Kief)
+- One Dark Pro (binaryify)
 
 ### Others
 
-- Evondev Snippets
-- Prettier
-- Sublime Text Keymap
-- REST Client (Huachao Mao)
-- Tailwind CSS IntelliSense
+- Bookmarks (Alessandro Fragnani)
+- Console Flash (NAPTheDevHcj)
 - Import Cost (Wix)
+- REST Client (Huachao Mao)
+
+- Evondev Snippets (evondev)
+- ES7+ React/Redux/React-Native snippets (dsznajder)
+- Sublime Text Keymap
+
+- Prettier
+- ESLint (Microsoft)
+
+- IntelliCode (Microsoft)
+- Tailwind CSS IntelliSense
+- PostCSS Language Support (csstools)
+- PostCSS Intellisense and Highlighting (Vu Nguyen)
 
 #### C++
 
 - C/C++ (Microsoft)
 - Better C++ Syntax (Jeff Hykin)
+- Clang-Format (Xaver Hellauer)
 
 #### Shader Editor
 
