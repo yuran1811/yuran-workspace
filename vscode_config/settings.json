@@ -9,8 +9,11 @@
   "window.titleBarStyle": "custom",
   "window.titleSeparator": "⚡",
 
+  "debug.internalConsoleOptions": "openOnSessionStart",
   "debug.onTaskErrors": "abort",
+  "debug.openDebug": "openOnDebugBreak",
   "debug.terminal.clearBeforeReusing": true,
+  "debug.toolBarLocation": "commandCenter",
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
@@ -109,8 +112,8 @@
   "editor.suggestSelection": "recentlyUsedByPrefix",
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "editor.wordWrap": "on",
-
   "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 700,
   "files.hotExit": "onExitAndWindowClose",
   "files.associations": {
     ".env*": "dotenv",
@@ -127,7 +130,7 @@
     "editor.inlayHints.enabled": "on"
   },
   "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
@@ -136,12 +139,33 @@
   "[markdown]": {
     "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS)|^//\\s*\\[x\\]|^//\\s*\\[ \\])"
   },
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [80],
+    "editor.selectionHighlight": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
 
   "html.autoClosingTags": true,
   "html.format.indentInnerHtml": true,
   "markdown.math.enabled": true,
   "markdown.updateLinksOnFileMove.enabled": "always",
   "markdown.validate.enabled": true,
+  "dart.openDevTools": "flutter",
+  "dart.flutterHotReloadOnSave": "allIfDirty",
+  "dart.hotReloadOnSave": "allIfDirty",
+
+  "C_Cpp.clang_format_path": "D:\\Program\\clang-tools\\clang-format.exe",
+  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.clang_format_style": "Google",
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "C_Cpp.default.compilerPath": "D:\\Program\\mingw64\\bin\\g++.exe",
+  "C_Cpp.default.cppStandard": "c++14",
+  "C_Cpp.default.intelliSenseMode": "clang-x86",
+  "C_Cpp.formatting": "clangFormat",
 
   "javascript.autoClosingTags": true,
   "javascript.inlayHints.parameterNames.enabled": "literals",
@@ -262,14 +286,11 @@
   },
 
   "bookmarks.saveBookmarksInProject": true,
-  "browse-lite.debugPort": 1811,
-  "browse-lite.format": "jpeg",
-  "clang-format.executable": "D:\\Program\\clang-tools\\clang-format.exe",
   "console-flash.double-quotes": false,
   "console-flash.semi-colon": false,
   "dotenv.cloakColor": "#fff",
   "dotenv.cloakIcon": ".",
-  "dotenv.enableAutocloaking": true,
+  "dotenv.enableAutocloaking": false,
   "dotenv.enableSecretpeeking": true,
   "emmet.includeLanguages": { "postcss": "css" },
   "emmet.showSuggestionsAsSnippets": true,
@@ -436,10 +457,10 @@
     "terminalCursor.background": "#D5C4A1",
     "terminalCursor.foreground": "#D5C4A1"
   },
+  "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabCloseButton": "left",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
