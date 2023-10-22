@@ -148,6 +148,12 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "[bibtex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
 
   "html.autoClosingTags": true,
   "html.format.indentInnerHtml": true,
@@ -164,7 +170,7 @@
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.default.compilerPath": "D:\\Program\\mingw64\\bin\\g++.exe",
   "C_Cpp.default.cppStandard": "c++14",
-  "C_Cpp.default.intelliSenseMode": "clang-x86",
+  "C_Cpp.default.intelliSenseMode": "windows-gcc-x86",
   "C_Cpp.formatting": "clangFormat",
 
   "javascript.autoClosingTags": true,
@@ -177,6 +183,21 @@
   "typescript.inlayHints.parameterTypes.enabled": true,
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "latex-workshop.bibtex-fields.sort.enabled": true,
+  "latex-workshop.bibtex-format.sort.enabled": true,
+  "latex-workshop.bibtex-format.trailingComma": true,
+  "latex-workshop.intellisense.file.base": "both",
+  "latex-workshop.intellisense.unimathsymbols.enabled": true,
+  "latex-workshop.intellisense.update.delay": 1500,
+  "latex-workshop.latex.autoBuild.interval": 1500,
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.autoClean.run": "onSucceeded",
+  "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.watch.pdf.delay": 750,
+  "latex-workshop.linting.chktex.enabled": true,
+  "latex-workshop.linting.lacheck.enabled": true,
+  "latex-workshop.view.pdf.zoom": "page-actual",
 
   "terminal.integrated.cursorBlinking": false,
   "terminal.integrated.cursorStyle": "line",
@@ -461,6 +482,7 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabCloseButton": "left",
+  "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.smoothScrolling": true,
   "workbench.startupEditor": "none",
