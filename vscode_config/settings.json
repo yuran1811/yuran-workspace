@@ -126,8 +126,8 @@
     "*.shader": "glsl"
   },
 
-  "[postcss]": {
-    "editor.inlayHints.enabled": "on"
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
@@ -138,6 +138,9 @@
   },
   "[markdown]": {
     "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS)|^//\\s*\\[x\\]|^//\\s*\\[ \\])"
+  },
+  "[postcss]": {
+    "editor.inlayHints.enabled": "on"
   },
   "[dart]": {
     "editor.formatOnSave": true,
@@ -155,19 +158,19 @@
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
 
+  "dart.flutterHotReloadOnSave": "allIfDirty",
+  "dart.hotReloadOnSave": "allIfDirty",
+  "dart.openDevTools": "flutter",
   "html.autoClosingTags": true,
   "html.format.indentInnerHtml": true,
   "markdown.math.enabled": true,
   "markdown.updateLinksOnFileMove.enabled": "always",
   "markdown.validate.enabled": true,
-  "dart.openDevTools": "flutter",
-  "dart.flutterHotReloadOnSave": "allIfDirty",
-  "dart.hotReloadOnSave": "allIfDirty",
 
+  "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_path": "D:\\Program\\clang-tools\\clang-format.exe",
   "C_Cpp.clang_format_sortIncludes": true,
   "C_Cpp.clang_format_style": "Google",
-  "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.default.compilerPath": "D:\\Program\\mingw64\\bin\\g++.exe",
   "C_Cpp.default.cppStandard": "c++14",
   "C_Cpp.default.intelliSenseMode": "windows-gcc-x86",
@@ -196,7 +199,9 @@
   "latex-workshop.latex.clean.subfolder.enabled": true,
   "latex-workshop.latex.watch.pdf.delay": 750,
   "latex-workshop.linting.chktex.enabled": true,
+  "latex-workshop.linting.chktex.exec.args": ["-wall", "-n22", "-n30", "-e16", "-q", "-n44", "-n19", "-n36"],
   "latex-workshop.linting.lacheck.enabled": true,
+  "latex-workshop.message.badbox.show": false,
   "latex-workshop.view.pdf.zoom": "page-actual",
 
   "terminal.integrated.cursorBlinking": false,
@@ -478,15 +483,16 @@
     "terminalCursor.background": "#D5C4A1",
     "terminalCursor.foreground": "#D5C4A1"
   },
+  "workbench.activityBar.location": "top",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabCloseButton": "left",
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.list.smoothScrolling": true,
-  "workbench.startupEditor": "none",
-  "workbench.preferredLightColorTheme": "Solarized Light",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
-  "workbench.colorTheme": "One Dark Pro Darker"
+  "workbench.preferredLightColorTheme": "Solarized Light",
+  "workbench.startupEditor": "none",
 }
