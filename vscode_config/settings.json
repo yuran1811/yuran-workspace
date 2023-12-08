@@ -18,7 +18,6 @@
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmUndo": "verbose",
-  "extensions.autoUpdate": "onlyEnabledExtensions",
   "extensions.ignoreRecommendations": true,
   "git.autofetch": true,
   "git.branchSortOrder": "alphabetically",
@@ -46,8 +45,8 @@
 
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": {
-    "source.fixAll": false,
-    "source.organizeImports": false
+    "source.fixAll": "never",
+    "source.organizeImports": "never"
   },
   "editor.semanticTokenColorCustomizations": {
     "[Rouge]": {
@@ -142,6 +141,9 @@
   "[postcss]": {
     "editor.inlayHints.enabled": "on"
   },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
   "[dart]": {
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
@@ -149,7 +151,7 @@
     "editor.selectionHighlight": false,
     "editor.suggestSelection": "first",
     "editor.tabCompletion": "onlySnippets",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
   "[latex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
@@ -168,13 +170,15 @@
   "markdown.validate.enabled": true,
 
   "C_Cpp.clang_format_fallbackStyle": "Google",
-  "C_Cpp.clang_format_path": "D:\\Program\\clang-tools\\clang-format.exe",
+  "C_Cpp.clang_format_path": "D:\\Program\\mingw64\\bin\\clang-format.exe",
   "C_Cpp.clang_format_sortIncludes": true,
   "C_Cpp.clang_format_style": "Google",
   "C_Cpp.default.compilerPath": "D:\\Program\\mingw64\\bin\\g++.exe",
-  "C_Cpp.default.cppStandard": "c++14",
+  "C_Cpp.default.cppStandard": "c++23",
   "C_Cpp.default.intelliSenseMode": "windows-gcc-x86",
   "C_Cpp.formatting": "clangFormat",
+
+  "python.terminal.activateEnvInCurrentTerminal": true,
 
   "javascript.autoClosingTags": true,
   "javascript.inlayHints.parameterNames.enabled": "literals",
@@ -212,6 +216,7 @@
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.shellIntegration.enabled": true,
   "terminal.integrated.shellIntegration.history": 7,
+  "terminal.integrated.stickyScroll.enabled": true,
   "terminal.integrated.profiles.windows": {
     "cmd": {
       "args": [],
@@ -486,13 +491,15 @@
   "workbench.activityBar.location": "top",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
+  "workbench.tree.enableStickyScroll": true,
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabCloseButton": "left",
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
   "workbench.list.smoothScrolling": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
   "workbench.preferredLightColorTheme": "Solarized Light",
   "workbench.startupEditor": "none",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.tabActionLocation": "left"
 }

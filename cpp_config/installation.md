@@ -2,16 +2,14 @@
 
 - Better C++ Syntax (Jeff Hykin)
 - C/C++ (Microsoft)
-- Clang-format (Xaver Hellauer)
 
 ## Install necessary apps
 
-- [**C++ compiler**](https://sourceforge.net/projects/mingw-w64/files/)
-- [**Clang-format**](./clang-format.exe)
+- [**GCC Download from `winlibs`**](https://winlibs.com/)
+- [**GCC Download from `sourceforge` (Not recommended)**](https://sourceforge.net/projects/mingw-w64/files/)
 
 ## Set variables environment
 
 - C++ compiler "bin" path
-- Clang format exec path
 
 ## Enjoy coding C++ on VSCode!
