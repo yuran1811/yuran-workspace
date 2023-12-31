@@ -1,0 +1,1 @@
+- prompts for GPT: https://prompts.chat/#act-as-a-fullstack-software-developer
