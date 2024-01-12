@@ -1,3 +1,4 @@
+// Place your key bindings in this file to override the defaults
 [
   {
     "key": "alt+l alt+l",
@@ -323,5 +324,23 @@
   {
     "key": "ctrl+k ctrl+t",
     "command": "-workbench.action.selectTheme"
+  },
+  {
+    "key": "alt+enter",
+    "command": "openInIntegratedTerminal"
+  },
+  {
+    "key": "shift+alt+w",
+    "command": "remote-wsl.connectInNewWindow"
+  },
+  {
+    "key": "ctrl+k ctrl+=",
+    "command": "editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+0",
+    "command": "-editor.foldAll",
+    "when": "editorTextFocus && foldingEnabled"
   }
 ]
