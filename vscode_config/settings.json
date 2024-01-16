@@ -13,11 +13,12 @@
   "debug.onTaskErrors": "abort",
   "debug.openDebug": "openOnDebugBreak",
   "debug.terminal.clearBeforeReusing": true,
-  "debug.toolBarLocation": "commandCenter",
+  "debug.toolBarLocation": "floating",
   "explorer.autoReveal": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmUndo": "verbose",
+  "explorer.confirmPasteNative": false,
   "extensions.ignoreRecommendations": true,
   "git.autofetch": true,
   "git.branchSortOrder": "alphabetically",
@@ -57,21 +58,53 @@
     }
   },
   "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
     "textMateRules": [
       {
-        "scope": ["keyword.other.dotenv"],
+        "scope": [
+          "keyword.other.dotenv"
+        ],
         "settings": {
           "foreground": "#FF000000"
         }
       },
       {
-        "scope": ["keyword.operator.new", "keyword.other", "keyword.control", "storage.type", "comment.line"],
+        "scope": [
+          "keyword.operator.new",
+          "keyword.other",
+          "keyword.control",
+          "storage.type",
+          "comment.line"
+        ],
         "settings": {
           "fontStyle": "italic"
         }
       },
       {
-        "scope": ["comment.block", "comment.block.documentation", "comment"],
+        "scope": [
+          "comment.block",
+          "comment.block.documentation",
+          "comment"
+        ],
         "settings": {
           "fontStyle": ""
         }
@@ -87,7 +120,7 @@
   "editor.definitionLinkOpensInPeek": true,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.find.loop": true,
-  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -131,6 +164,9 @@
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
+  "[cc]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS)|($TAGS)!.*)"
@@ -159,6 +195,9 @@
   "[bibtex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
 
   "dart.flutterHotReloadOnSave": "allIfDirty",
   "dart.hotReloadOnSave": "allIfDirty",
@@ -177,6 +216,10 @@
   "C_Cpp.default.cppStandard": "c++23",
   "C_Cpp.default.intelliSenseMode": "windows-gcc-x86",
   "C_Cpp.formatting": "clangFormat",
+
+  "cmake.configureOnOpen": false,
+  "cmake.options.statusBarVisibility": "hidden",
+  "cmake.showOptionsMovedNotification": false,
 
   "python.terminal.activateEnvInCurrentTerminal": true,
 
@@ -201,6 +244,7 @@
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.autoClean.run": "onSucceeded",
   "latex-workshop.latex.clean.subfolder.enabled": true,
+  "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.watch.pdf.delay": 750,
   "latex-workshop.linting.chktex.enabled": true,
   "latex-workshop.linting.chktex.exec.args": ["-wall", "-n22", "-n30", "-e16", "-q", "-n44", "-n19", "-n36"],
