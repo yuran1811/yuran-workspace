@@ -235,7 +235,7 @@
   "C_Cpp.codeAnalysis.clangTidy.headerFilter": null,
   "C_Cpp.codeAnalysis.clangTidy.path": "D:\\Program\\mingw64\\bin\\clang-tidy.exe",
   "C_Cpp.default.compilerPath": "D:\\Program\\mingw64\\bin\\g++.exe",
-  "C_Cpp.default.cppStandard": "c++23",
+  "C_Cpp.default.cppStandard": "c++17",
   "C_Cpp.default.intelliSenseMode": "gcc-x86",
   "C_Cpp.formatting": "clangFormat",
 
@@ -274,14 +274,14 @@
   "latex-workshop.message.badbox.show": false,
   "latex-workshop.view.pdf.zoom": "page-actual",
 
+  // "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
   "terminal.integrated.cursorBlinking": false,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  "terminal.integrated.fontFamily": "'Fira Code'",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.shellIntegration.enabled": true,
-  "terminal.integrated.shellIntegration.history": 7,
+  "terminal.integrated.shellIntegration.history": 15,
   "terminal.integrated.stickyScroll.enabled": true,
   "terminal.integrated.profiles.windows": {
     "cmd": {
@@ -453,7 +453,10 @@
       "italic": false
     }
   ],
-
+  
+  "todo-tree.general.showActivityBarBadge": true,
+  "todo-tree.highlights.enabled": true,
+  "todo-tree.tree.showBadges": true,
   "todo-tree.general.tags": ["TODO", "FIXME", "FIXIT", "FIX", "SEE", "LOOK", "[x]", "[ ]", "WARN"],
   "todo-tree.general.tagGroups": {
     "FIXME": ["FIXME", "FIXIT", "FIX"],
@@ -461,9 +464,6 @@
     "SEE": ["SEE", "LOOK"],
     "WARN": ["WARN"]
   },
-  "todo-tree.general.showActivityBarBadge": true,
-  "todo-tree.tree.showBadges": true,
-  "todo-tree.highlights.enabled": true,
   "todo-tree.highlights.defaultHighlight": {
     "type": "line",
     "icon": "alert",
@@ -535,31 +535,33 @@
   // https://glitchbone.github.io/vscode-base16-term/#/__theme__
   // preferred-theme: [gruvbox-dark-soft , tomorrow-night]
   "workbench.colorCustomizations": {
-    "terminal.ansiBlack": "#32302F",
-    "terminal.ansiBlue": "#83A598",
-    "terminal.ansiBrightBlack": "#665C54",
-    "terminal.ansiBrightBlue": "#83A598",
-    "terminal.ansiBrightCyan": "#8EC07C",
-    "terminal.ansiBrightGreen": "#B8BB26",
-    "terminal.ansiBrightMagenta": "#D3869B",
-    "terminal.ansiBrightRed": "#FB4934",
-    "terminal.ansiBrightWhite": "#FBF1C7",
-    "terminal.ansiBrightYellow": "#FABD2F",
-    "terminal.ansiCyan": "#8EC07C",
-    "terminal.ansiGreen": "#B8BB26",
-    "terminal.ansiMagenta": "#D3869B",
-    "terminal.ansiRed": "#FB4934",
-    "terminal.ansiWhite": "#D5C4A1",
-    "terminal.ansiYellow": "#FABD2F",
-    "terminal.foreground": "#D5C4A1",
-    "terminalCursor.background": "#D5C4A1",
-    "terminalCursor.foreground": "#D5C4A1"
+    "terminal.ansiBlack": "#1D1F21",
+    "terminal.ansiBlue": "#81A2BE",
+    "terminal.ansiBrightBlack": "#969896",
+    "terminal.ansiBrightBlue": "#81A2BE",
+    "terminal.ansiBrightCyan": "#8ABEB7",
+    "terminal.ansiBrightGreen": "#B5BD68",
+    "terminal.ansiBrightMagenta": "#B294BB",
+    "terminal.ansiBrightRed": "#CC6666",
+    "terminal.ansiBrightWhite": "#FFFFFF",
+    "terminal.ansiBrightYellow": "#F0C674",
+    "terminal.ansiCyan": "#8ABEB7",
+    "terminal.ansiGreen": "#B5BD68",
+    "terminal.ansiMagenta": "#B294BB",
+    "terminal.ansiRed": "#CC6666",
+    "terminal.ansiWhite": "#d1d1d1",
+    "terminal.ansiYellow": "#F0C674",
+
+    "terminal.foreground": "#d1d1d1",
+    "terminalCursor.background": "#d1d1d1",
+    "terminalCursor.foreground": "#d1d1d1"
   },
   "workbench.activityBar.location": "top",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.enablePreview": false,
   "workbench.editor.labelFormat": "short",
   "workbench.editor.scrollToSwitchTabs": true,
+  "workbench.editor.tabActionLocation": "left",
   "workbench.editor.wrapTabs": true,
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
   "workbench.iconTheme": "material-icon-theme",
@@ -568,6 +570,5 @@
   "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
   "workbench.preferredLightColorTheme": "Solarized Light",
   "workbench.startupEditor": "none",
-  "workbench.tree.enableStickyScroll": true,
-  "workbench.editor.tabActionLocation": "left"
+  "workbench.tree.enableStickyScroll": true
 }
