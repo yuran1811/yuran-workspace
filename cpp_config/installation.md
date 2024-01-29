@@ -1,7 +1,7 @@
 ## Install necessary extensions
 
-- Better C++ Syntax (Jeff Hykin)
 - C/C++ (Microsoft)
+- Better C++ Syntax (Jeff Hykin)
 
 ## Install necessary apps
 

@@ -95,31 +95,19 @@
     },
     "textMateRules": [
       {
-        "scope": [
-          "keyword.other.dotenv"
-        ],
+        "scope": ["keyword.other.dotenv"],
         "settings": {
           "foreground": "#FF000000"
         }
       },
       {
-        "scope": [
-          "keyword.operator.new",
-          "keyword.other",
-          "keyword.control",
-          "storage.type",
-          "comment.line"
-        ],
+        "scope": ["keyword.operator.new", "keyword.other", "keyword.control", "storage.type", "comment.line"],
         "settings": {
           "fontStyle": "italic"
         }
       },
       {
-        "scope": [
-          "comment.block",
-          "comment.block.documentation",
-          "comment"
-        ],
+        "scope": ["comment.block", "comment.block.documentation", "comment"],
         "settings": {
           "fontStyle": ""
         }
@@ -453,7 +441,7 @@
       "italic": false
     }
   ],
-  
+
   "todo-tree.general.showActivityBarBadge": true,
   "todo-tree.highlights.enabled": true,
   "todo-tree.tree.showBadges": true,

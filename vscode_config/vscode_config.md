@@ -1,6 +1,7 @@
 # VSCode Config
 
 ---
+> evondev theme config
 
 ## Installation
 
@@ -47,21 +48,15 @@
 ```
 
 ### Step 4: Done!
+---
 
-## Extensions:
-
-### Automation
-
-- Auto Rename Tag (Jun Han)
-- CSS Peek (Pranay Prakash)
-- HTML to CSS autocompletion (solnurkarim)
-- Live SASS Compiler (Glenn Marks)
+## Extensions
 
 ### Personalization
 
+- One Dark Pro (binaryify)
 - Evondev Dracula (evondev)
 - Material Icon Theme (Philipp Kief)
-- One Dark Pro (binaryify)
 
 ### Others
 
@@ -86,7 +81,7 @@
 
 - C/C++ (Microsoft)
 - Better C++ Syntax (Jeff Hykin)
-- Clang-Format (Xaver Hellauer)
+- CMake, CMake Tools (Microsoft)
 
 #### Shader Editor
 
