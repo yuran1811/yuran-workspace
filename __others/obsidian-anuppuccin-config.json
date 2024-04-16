@@ -5,8 +5,8 @@
   "anuppuccin-theme-settings@@anuppuccin-light-theme-accents": "ctp-accent-light-lavender",
   "anuppuccin-theme-settings@@anuppuccin-accent-toggle": true,
   "anuppuccin-theme-settings@@anp-active-line": "anp-current-line-border",
-  "anuppuccin-theme-settings@@anp-callout-select": "anp-callout-vanilla-plus",
-  "anuppuccin-theme-settings@@anp-callout-color-toggle": false,
+  "anuppuccin-theme-settings@@anp-callout-select": "anp-callout-sleek",
+  "anuppuccin-theme-settings@@anp-callout-color-toggle": true,
   "anuppuccin-theme-settings@@anp-custom-checkboxes": true,
   "anuppuccin-theme-settings@@anp-speech-bubble": true,
   "anuppuccin-theme-settings@@anp-codeblock-numbers": true,
@@ -81,5 +81,8 @@
   "floating-toc-styles@@floating-toc-response-time": 0,
   "floating-toc-styles@@floating-toc-font-size": 1,
   "floating-toc-styles@@floating-toc-line-height": 1.75,
-  "floating-toc-styles@@floating-toc-line-width": 24
+  "floating-toc-styles@@floating-toc-line-width": 24,
+  "anuppuccin-theme-settings@@callout-title-opacity": 0.15,
+  "anuppuccin-theme-settings@@anp-hide-status-bar": false,
+  "anuppuccin-theme-settings@@anp-status-bar-select": "anp-floating-status-bar"
 }
