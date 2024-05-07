@@ -1,0 +1,2 @@
+- Goto [LightBulb](https://github.com/Tyrrrz/LightBulb) github page and download the latest release.
+- Copy the [Settings.json](./Settings.json) file to the same directory as the LightBulb executable.

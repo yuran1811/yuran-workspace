@@ -1,17 +1,21 @@
 {
   "security.allowedUNCHosts": ["wsl.localhost"],
+  "security.workspace.trust.emptyWindow": true,
   "security.workspace.trust.enabled": true,
+  "security.workspace.trust.startupPrompt": "once",
   "security.workspace.trust.untrustedFiles": "open",
 
   "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "window.customMenuBarAltFocus": false,
-  "window.menuBarVisibility": "classic",
   "window.newWindowDimensions": "maximized",
   "window.openFoldersInNewWindow": "on",
+  "window.restoreWindows": "preserve",
+  "window.systemColorTheme": "dark",
   "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${remoteName}",
   "window.titleBarStyle": "custom",
   "window.titleSeparator": "⚡",
+  "window.zoomLevel": 0,
 
   "debug.console.closeOnEnd": true,
   "debug.internalConsoleOptions": "openOnSessionStart",
@@ -22,11 +26,14 @@
   "debug.toolBarLocation": "floating",
 
   "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmPasteNative": false,
   "explorer.confirmUndo": "verbose",
-  "explorer.sortOrder": "type",
+  "explorer.incrementalNaming": "smart",
+  "explorer.openEditors.sortOrder": "alphabetical",
+  // "explorer.sortOrder": "modified",
   "explorer.sortOrderLexicographicOptions": "lower",
 
   "extensions.autoCheckUpdates": true,
@@ -34,11 +41,14 @@
   "extensions.ignoreRecommendations": true,
 
   "git.autofetch": true,
+  "git.autoStash": true,
   "git.branchSortOrder": "alphabetically",
   "git.confirmSync": false,
+  "git.decorations.enabled": true,
   "git.enableSmartCommit": true,
   "git.untrackedChanges": "separate",
 
+  "search.sortOrder": "fileNames",
   "search.defaultViewMode": "tree",
   "search.exclude": {
     "**/.git": true,
@@ -59,7 +69,9 @@
     "**/yarn.lock": true
   },
 
+  "diffEditor.diffAlgorithm": "advanced",
   "diffEditor.ignoreTrimWhitespace": false,
+
   "editor.codeActionsOnSave": {
     "source.fixAll": "never",
     "source.organizeImports": "never"
@@ -114,6 +126,7 @@
       }
     ]
   },
+  "editor.acceptSuggestionOnEnter": "smart",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeLensFontFamily": "Fira Code",
   "editor.cursorBlinking": "solid",
@@ -141,16 +154,19 @@
   "editor.pasteAs.enabled": true,
   "editor.renderControlCharacters": false,
   "editor.renderWhitespace": "none",
+  "editor.smoothScrolling": true,
   "editor.stickyScroll.enabled": true,
   "editor.stickyTabStops": true,
   "editor.suggest.preview": true,
   "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
   "editor.wordWrap": "on",
 
   "files.autoGuessEncoding": true,
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 700,
+  "files.autoSaveDelay": 500,
+  "files.autoSaveWhenNoErrors": true,
   "files.hotExit": "onExitAndWindowClose",
   "files.associations": {
     ".env*": "dotenv",
@@ -187,7 +203,7 @@
   },
   "[dart]": {
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
+    "editor.formatOnType": false,
     "editor.rulers": [80],
     "editor.selectionHighlight": false,
     "editor.suggestSelection": "first",
@@ -215,14 +231,16 @@
 
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_path": "D:\\Program\\mingw64\\bin\\clang-format.exe",
-  "C_Cpp.clang_format_sortIncludes": true,
+  "C_Cpp.clang_format_sortIncludes": false,
   "C_Cpp.clang_format_style": "Google",
+  "C_Cpp.codeAnalysis.clangTidy.checks.disabled": ["*"],
   "C_Cpp.codeAnalysis.clangTidy.codeAction.formatFixes": true,
   "C_Cpp.codeAnalysis.clangTidy.codeAction.showDocumentation": true,
   "C_Cpp.codeAnalysis.clangTidy.enabled": true,
   "C_Cpp.codeAnalysis.clangTidy.headerFilter": null,
   "C_Cpp.codeAnalysis.clangTidy.path": "D:\\Program\\mingw64\\bin\\clang-tidy.exe",
   "C_Cpp.default.compilerPath": "D:\\Program\\mingw64\\bin\\g++.exe",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
   "C_Cpp.default.cppStandard": "c++17",
   "C_Cpp.default.intelliSenseMode": "gcc-x86",
   "C_Cpp.formatting": "clangFormat",
@@ -231,6 +249,10 @@
   "cmake.options.statusBarVisibility": "hidden",
   "cmake.showOptionsMovedNotification": false,
 
+  "notebook.formatOnSave.enabled": true,
+  "notebook.insertFinalNewline": true,
+  "notebook.output.scrolling": true,
+  "notebook.stickyScroll.enabled": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
 
   "javascript.autoClosingTags": true,
@@ -245,11 +267,14 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
 
   "latex-workshop.bibtex-fields.sort.enabled": true,
+  "latex-workshop.bibtex-format.handleDuplicates": "Comment Duplicates",
   "latex-workshop.bibtex-format.sort.enabled": true,
   "latex-workshop.bibtex-format.trailingComma": true,
+  "latex-workshop.hover.citation.enabled": true,
   "latex-workshop.intellisense.file.base": "both",
   "latex-workshop.intellisense.unimathsymbols.enabled": true,
   "latex-workshop.intellisense.update.delay": 1500,
+  "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": true,
   "latex-workshop.latex.autoBuild.interval": 1500,
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.autoClean.run": "onSucceeded",
@@ -257,10 +282,146 @@
   "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.watch.pdf.delay": 750,
   "latex-workshop.linting.chktex.enabled": true,
-  "latex-workshop.linting.chktex.exec.args": ["-wall", "-n22", "-n30", "-e16", "-q", "-n44", "-n19", "-n36"],
+  "latex-workshop.linting.chktex.exec.args": ["-wall", "-n8", "-n22", "-n30", "-e16", "-q", "-n44", "-n19", "-n36"],
   "latex-workshop.linting.lacheck.enabled": true,
   "latex-workshop.message.badbox.show": false,
-  "latex-workshop.view.pdf.zoom": "page-actual",
+  "latex-workshop.view.pdf.zoom": "auto",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=%OUTDIR%",
+        "%DOC%",
+        "-shell-escape"
+      ],
+      "env": {}
+    },
+    {
+      "name": "lualatexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-lualatex",
+        "-outdir=%OUTDIR%",
+        "%DOC%",
+        "-shell-escape"
+      ],
+      "env": {}
+    },
+    {
+      "name": "xelatexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-xelatex",
+        "-outdir=%OUTDIR%",
+        "%DOC%",
+        "-shell-escape"
+      ],
+      "env": {}
+    },
+    {
+      "name": "latexmk_rconly",
+      "command": "latexmk",
+      "args": ["%DOC%"],
+      "env": {}
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": ["-synctex=1", "-interaction=nonstopmode", "-file-line-error", "%DOC%", "-shell-escape"],
+      "env": {}
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": ["%DOCFILE%"],
+      "env": {}
+    },
+    {
+      "name": "rnw2tex",
+      "command": "Rscript",
+      "args": ["-e", "knitr::opts_knit$set(concordance = TRUE); knitr::knit('%DOCFILE_EXT%')"],
+      "env": {}
+    },
+    {
+      "name": "jnw2tex",
+      "command": "julia",
+      "args": ["-e", "using Weave; weave(\"%DOC_EXT%\", doctype=\"tex\")"],
+      "env": {}
+    },
+    {
+      "name": "jnw2texminted",
+      "command": "julia",
+      "args": ["-e", "using Weave; weave(\"%DOC_EXT%\", doctype=\"texminted\")"],
+      "env": {}
+    },
+    {
+      "name": "pnw2tex",
+      "command": "pweave",
+      "args": ["-f", "tex", "%DOC_EXT%"],
+      "env": {}
+    },
+    {
+      "name": "pnw2texminted",
+      "command": "pweave",
+      "args": ["-f", "texminted", "%DOC_EXT%"],
+      "env": {}
+    },
+    {
+      "name": "tectonic",
+      "command": "tectonic",
+      "args": ["--synctex", "--keep-logs", "%DOC%.tex"],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": ["latexmk"]
+    },
+    {
+      "name": "latexmk (latexmkrc)",
+      "tools": ["latexmk_rconly"]
+    },
+    {
+      "name": "latexmk (lualatex)",
+      "tools": ["lualatexmk"]
+    },
+    {
+      "name": "latexmk (xelatex)",
+      "tools": ["xelatexmk"]
+    },
+    {
+      "name": "pdflatex -> bibtex -> pdflatex * 2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "Compile Rnw files",
+      "tools": ["rnw2tex", "latexmk"]
+    },
+    {
+      "name": "Compile Jnw files",
+      "tools": ["jnw2tex", "latexmk"]
+    },
+    {
+      "name": "Compile Pnw files",
+      "tools": ["pnw2tex", "latexmk"]
+    },
+    {
+      "name": "tectonic",
+      "tools": ["tectonic"]
+    }
+  ],
 
   // "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
   "terminal.integrated.cursorBlinking": false,
@@ -268,19 +429,11 @@
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.profiles.windows": {},
   "terminal.integrated.shellIntegration.enabled": true,
   "terminal.integrated.shellIntegration.history": 15,
+  "terminal.integrated.smoothScrolling": false,
   "terminal.integrated.stickyScroll.enabled": true,
-  "terminal.integrated.profiles.windows": {
-    "cmd": {
-      "args": [],
-      "icon": "terminal-cmd",
-      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"]
-    },
-    "Bash": {
-      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
-    }
-  },
 
   "eslint.codeAction.showDocumentation": { "enable": true },
   "eslint.quiet": true,
@@ -370,7 +523,6 @@
       "stash": true
     }
   },
-
   "bookmarks.saveBookmarksInProject": true,
   "console-flash.double-quotes": false,
   "console-flash.semi-colon": false,
@@ -443,9 +595,9 @@
   ],
 
   "todo-tree.general.showActivityBarBadge": true,
+  "todo-tree.general.tags": ["TODO", "FIXME", "FIXIT", "FIX", "SEE", "LOOK", "[x]", "[ ]", "WARN"],
   "todo-tree.highlights.enabled": true,
   "todo-tree.tree.showBadges": true,
-  "todo-tree.general.tags": ["TODO", "FIXME", "FIXIT", "FIX", "SEE", "LOOK", "[x]", "[ ]", "WARN"],
   "todo-tree.general.tagGroups": {
     "FIXME": ["FIXME", "FIXIT", "FIX"],
     "TODO": ["TODO"],
@@ -513,6 +665,7 @@
   "material-icon-theme.saturation": 0.8,
   "oneDarkPro.bold": true,
   "oneDarkPro.editorTheme": "One Dark Pro Flat",
+  "oneDarkPro.italic": true,
   "oneDarkPro.markdownStyle": true,
   "oneDarkPro.vivid": true,
   "vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
@@ -546,7 +699,6 @@
   },
   "workbench.activityBar.location": "top",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.editor.enablePreview": false,
   "workbench.editor.labelFormat": "short",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabActionLocation": "left",
@@ -558,5 +710,6 @@
   "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
   "workbench.preferredLightColorTheme": "Solarized Light",
   "workbench.startupEditor": "none",
-  "workbench.tree.enableStickyScroll": true
+  "workbench.tree.enableStickyScroll": true,
+  "workbench.editor.enablePreview": false
 }

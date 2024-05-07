@@ -2,10 +2,13 @@
 
 - C/C++ (Microsoft)
 - Better C++ Syntax (Jeff Hykin)
+- Optionals:
+  - CMake (twxs)
+  - CMake Tools (Microsoft)
 
 ## Install necessary apps
 
-- [**GCC Download from `winlibs`**](https://winlibs.com/)
+- [**GCC Download from `winlibs` (Highly recommended)**](https://winlibs.com/)
 - [**GCC Download from `sourceforge` (Not recommended)**](https://sourceforge.net/projects/mingw-w64/files/)
 
 ## Set variables environment

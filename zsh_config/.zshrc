@@ -9,7 +9,6 @@ fi
 
 export ZSH="$HOME/.oh-my-zsh"
 
-# ZSH_THEME="agnoster"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 DISABLE_UPDATE_PROMPT=true
 zstyle ':omz:update' mode disabled
@@ -38,7 +37,7 @@ fe() {
     node    'nodejs.org/en/docs/'
     tsc     'www.typescriptlang.org/docs'
     vue     'vuejs.org'
-    react   'reactjs.org'
+    react   'https://react.dev'
   )
   url="${urls[$1]}$(omz_urlencode -P ${@[2,-1]})"
 
@@ -74,8 +73,12 @@ tw() {
 }
 mail() { open_command "https://mail.google.com/mail/u/${1}/#inbox" }
 ytlist() { open_command "https://www.youtube.com/playlist?list=PL6f36ViIxP_HsqR-HbKF2LBt2ZYGr8Rbi" }
-cc() { g++ $1.cc -o $1 && ./$1 && rm $1.exe }
-cpp() { g++ $1.cpp -o $1 && ./$1 && rm $1.exe }
+rm_merge_branch() { git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d }
+
+CODEFORCES_BUILD_FLAGS="-Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wduplicated-cond -Wlogical-op"
+cc() { g++ $1.cc -o $1 && ./$1 && rm ./$1.exe }
+cpp() { g++ $1.cpp -o $1 && ./$1 && rm ./$1.exe }
+cfcpp() { g++ $CODEFORCES_BUILD_FLAGS $1.cpp -o $1 && ./$1 && rm ./$1.exe }
 
 alias gg="web gg"
 alias ggs="web gg"
@@ -112,9 +115,8 @@ alias yr="yarn run"
 alias yout="yarn upgrade-interactive"
 
 alias cls="clear"
-alias timecheck="time zsh -i -c exit"
-alias vite="npx create-vite@latest"
-# zprof
+alias timecheck="time && zsh -i -c exit"
+alias newvite="npx create-vite@latest"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# zprof

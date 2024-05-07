@@ -1,9 +1,8 @@
 # VSCode Config
 
 ---
-> evondev theme config
 
-## Installation
+## evondev theme config
 
 ### Step 1: Install needed extensions
 
@@ -48,40 +47,89 @@
 ```
 
 ### Step 4: Done!
+
 ---
 
 ## Extensions
 
+### AI
+
+- Github Copilot, Github Copilot Chat (GitHub)
+- IntelliCode (Microsoft)
+
 ### Personalization
 
 - One Dark Pro (binaryify)
-- Evondev Dracula (evondev)
 - Material Icon Theme (Philipp Kief)
+- Evondev Dracula (evondev) + Custom CSS and JS Loader (be5invis)
 
 ### Others
 
 - Bookmarks (Alessandro Fragnani)
-- Console Flash (NAPTheDevHcj)
-- Import Cost (Wix)
-- REST Client (Huachao Mao)
+- Smart Clicks (Anthony Fu)
+- Sublime Text Keymap (Microsoft)
+- Todo Tree (Gruntfuggly)
 
-- Evondev Snippets (evondev)
+- Better Comments (Aaron Bond)
+- Document This (oouo-diogo-perdigao)
+
+- Docker (Microsoft)
+
+#### Web Development
+
+- es6-string-html (Tobermory)
 - ES7+ React/Redux/React-Native snippets (dsznajder)
-- Sublime Text Keymap
+- Evondev Snippets (evondev)
 
-- Prettier
 - ESLint (Microsoft)
+- Prettier (Prettier)
 
-- IntelliCode (Microsoft)
-- Tailwind CSS IntelliSense
+- Console Flash (NAPTheDevHcj)
+- Console Ninja (Wallaby.js)
+
+- Color Highlight (Sergii N)
+- Dotenv Official + Vault (Dotenv)
+- Import Cost (Wix)
+- REST Client (Huachao Mao) / Thunder Client (Thunder Client)
+
+- Tailwind CSS IntelliSense (Tailwind Labs)
 - PostCSS Language Support (csstools)
 - PostCSS Intellisense and Highlighting (Vu Nguyen)
+
+#### Mobile Development (Flutter and React Native)
+
+- Dart (Dart Code)
+- Flutter (Dart Code) + Flutter Widget Snippets (Alexis Villegas Torres)
+- Stylelint (Stylelint)
 
 #### C++
 
 - C/C++ (Microsoft)
 - Better C++ Syntax (Jeff Hykin)
 - CMake, CMake Tools (Microsoft)
+
+#### Python
+
+- Python (Microsoft)
+- Pylance (Microsoft)
+- Black Formatter (Microsoft)
+- Jupyter (Microsoft)
+
+#### Rust
+
+- rust-analyzer (The Rust Programming Language)
+- Even Better TOML (tamasfe)
+
+#### Git & Github
+
+- GitHub Codespaces (GitHub)
+- GitHub Pull Requests (GitHub)
+- GitLens (GitKraken)
+
+#### Database
+
+- Prisma (Prisma)
+- GraphQL: Language Feature Support + Syntax Highlighting (GraphQL Foundation)
 
 #### Shader Editor
 
