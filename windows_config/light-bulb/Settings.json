@@ -6,15 +6,15 @@
   "MinimumBrightness": 0.1,
   "MaximumBrightness": 1,
   "NightConfiguration": {
-    "Temperature": 3750,
-    "Brightness": 0.75
+    "Temperature": 3700,
+    "Brightness": 0.95
   },
   "DayConfiguration": {
     "Temperature": 6250,
     "Brightness": 1
   },
   "ConfigurationTransitionDuration": "03:00:00",
-  "ConfigurationTransitionOffset": 0.4,
+  "ConfigurationTransitionOffset": 0.4533333333333332,
   "IsManualSunriseSunsetEnabled": false,
   "ManualSunriseTime": "06:40:00",
   "ManualSunsetTime": "18:45:00",
