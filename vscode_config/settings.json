@@ -46,6 +46,7 @@
   "git.confirmSync": false,
   "git.decorations.enabled": true,
   "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
   "git.untrackedChanges": "separate",
 
   "search.sortOrder": "fileNames",
@@ -70,6 +71,7 @@
   },
 
   "diffEditor.diffAlgorithm": "advanced",
+  "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
 
   "editor.codeActionsOnSave": {
@@ -458,6 +460,7 @@
   "tailwindCSS.lint.invalidVariant": "warning",
   "tailwindCSS.suggestions": true,
 
+  "prisma.showPrismaDataPlatformNotification": false,
   "quokka.compactMessageOutput": true,
   "quokka.startViewStatusBar": true,
   "quokka.syncSettings": true,
@@ -469,6 +472,7 @@
   "vsintellicode.python.completionsEnabled": false,
   "vsintellicode.typescript.completionsEnabled": true,
 
+  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "*": true,
     "markdown": true,
@@ -702,7 +706,7 @@
   "workbench.editor.labelFormat": "short",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabActionLocation": "left",
-  "workbench.editor.wrapTabs": true,
+  "workbench.editor.wrapTabs": false,
   "workbench.editorAssociations": { "*.pdf": "latex-workshop-pdf-hook" },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.list.smoothScrolling": true,
