@@ -14,7 +14,8 @@
     "Brightness": 1
   },
   "ConfigurationTransitionDuration": "03:00:00",
-  "ConfigurationTransitionOffset": 0.4533333333333332,
+  "ConfigurationTransitionOffset": 0.45,
+  "ConfigurationSmoothingMaxDuration": "00:00:05",
   "IsManualSunriseSunsetEnabled": false,
   "ManualSunriseTime": "06:40:00",
   "ManualSunsetTime": "18:45:00",
@@ -22,26 +23,14 @@
     "Latitude": 10.0461,
     "Longitude": 105.721
   },
+  "Theme": 2,
   "IsAutoUpdateEnabled": true,
   "IsDefaultToDayConfigurationEnabled": true,
   "IsConfigurationSmoothingEnabled": true,
   "IsPauseWhenFullScreenEnabled": true,
   "IsGammaPollingEnabled": false,
   "IsApplicationWhitelistEnabled": true,
-  "WhitelistedApplications": [
-    {
-      "ExecutableFilePath": "C:\\Users\\trieu\\AppData\\Local\\Obsidian\\Obsidian.exe",
-      "Name": "Obsidian"
-    },
-    {
-      "ExecutableFilePath": "C:\\Users\\trieu\\AppData\\Local\\Thorium\\Application\\thorium.exe",
-      "Name": "thorium"
-    },
-    {
-      "ExecutableFilePath": "C:\\Users\\trieu\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
-      "Name": "Code"
-    }
-  ],
+  "WhitelistedApplications": [],
   "ToggleHotKey": {
     "Key": 97,
     "Modifiers": 5
