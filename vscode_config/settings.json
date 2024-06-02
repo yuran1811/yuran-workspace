@@ -33,7 +33,7 @@
   "explorer.confirmUndo": "verbose",
   "explorer.incrementalNaming": "smart",
   "explorer.openEditors.sortOrder": "alphabetical",
-  // "explorer.sortOrder": "modified",
+  "explorer.sortOrder": "type",
   "explorer.sortOrderLexicographicOptions": "lower",
 
   "extensions.autoCheckUpdates": true,
@@ -222,15 +222,6 @@
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
 
-  "dart.flutterHotReloadOnSave": "allIfDirty",
-  "dart.hotReloadOnSave": "allIfDirty",
-  "dart.openDevTools": "flutter",
-  "html.autoClosingTags": true,
-  "html.format.indentInnerHtml": true,
-  "markdown.math.enabled": true,
-  "markdown.updateLinksOnFileMove.enabled": "always",
-  "markdown.validate.enabled": true,
-
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_path": "D:\\Program\\mingw64\\bin\\clang-format.exe",
   "C_Cpp.clang_format_sortIncludes": false,
@@ -249,8 +240,17 @@
 
   "cmake.configureOnOpen": false,
   "cmake.options.statusBarVisibility": "hidden",
+  "cmake.pinnedCommands": ["workbench.action.tasks.configureTaskRunner", "workbench.action.tasks.runTask"],
   "cmake.showOptionsMovedNotification": false,
 
+  "dart.flutterHotReloadOnSave": "allIfDirty",
+  "dart.hotReloadOnSave": "allIfDirty",
+  "dart.openDevTools": "flutter",
+  "html.autoClosingTags": true,
+  "html.format.indentInnerHtml": true,
+  "markdown.math.enabled": true,
+  "markdown.updateLinksOnFileMove.enabled": "always",
+  "markdown.validate.enabled": true,
   "notebook.formatOnSave.enabled": true,
   "notebook.insertFinalNewline": true,
   "notebook.output.scrolling": true,
@@ -425,18 +425,6 @@
     }
   ],
 
-  // "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
-  "terminal.integrated.cursorBlinking": false,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.profiles.windows": {},
-  "terminal.integrated.shellIntegration.enabled": true,
-  "terminal.integrated.shellIntegration.history": 15,
-  "terminal.integrated.smoothScrolling": false,
-  "terminal.integrated.stickyScroll.enabled": true,
-
   "eslint.codeAction.showDocumentation": { "enable": true },
   "eslint.quiet": true,
   "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact", "vue", "html"],
@@ -527,6 +515,7 @@
       "stash": true
     }
   },
+
   "bookmarks.saveBookmarksInProject": true,
   "console-flash.double-quotes": false,
   "console-flash.semi-colon": false,
@@ -677,6 +666,18 @@
   "vsicons.presets.jsOfficial": true,
   "vsicons.presets.tsOfficial": true,
 
+  // "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
+  "terminal.integrated.cursorBlinking": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.profiles.windows": {},
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.shellIntegration.history": 15,
+  "terminal.integrated.smoothScrolling": false,
+  "terminal.integrated.stickyScroll.enabled": true,
+
   // https://glitchbone.github.io/vscode-base16-term/#/__theme__
   // preferred-theme: [gruvbox-dark-soft , tomorrow-night]
   "workbench.colorCustomizations": {
@@ -703,6 +704,7 @@
   },
   "workbench.activityBar.location": "top",
   "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.enablePreview": false,
   "workbench.editor.labelFormat": "short",
   "workbench.editor.scrollToSwitchTabs": true,
   "workbench.editor.tabActionLocation": "left",
@@ -714,6 +716,5 @@
   "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
   "workbench.preferredLightColorTheme": "Solarized Light",
   "workbench.startupEditor": "none",
-  "workbench.tree.enableStickyScroll": true,
-  "workbench.editor.enablePreview": false
+  "workbench.tree.enableStickyScroll": true
 }
