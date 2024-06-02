@@ -1,0 +1,9 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "*.dat": true,
+    "*.dll": true,
+    "*.dl_": true,
+    "*.exe": true
+  }
+}
