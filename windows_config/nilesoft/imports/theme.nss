@@ -1,7 +1,6 @@
 ﻿theme
 {
 	name = "modern" // auto, classic, white, black, or modern
-	// dark = sys.dark
 	dark = default
 	view = view.medium // auto, compact, small, medium, large, wide
 	background

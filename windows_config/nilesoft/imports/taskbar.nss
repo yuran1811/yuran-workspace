@@ -12,7 +12,6 @@ menu(where=@(this.count == 0) type='taskbar' image=icon.settings expanded=true)
 	menu(title="Apps" image=\uE254)
 	{
 		item(title='Paint' image=\uE116 cmd='mspaint')
-		item(title='Edge' image cmd='@sys.prog32\Microsoft\Edge\Application\msedge.exe')
 		item(title='Calculator' image=\ue1e7 cmd='calc.exe')
 		item(title=str.res('regedit.exe,-16') image cmd='regedit.exe')
 	}

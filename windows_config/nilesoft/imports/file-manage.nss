@@ -62,13 +62,13 @@
 	{
 		menu(separator="before" title='New Folder' image=icon.new_folder)
 		{
-			item(title='DateTime' cmd=io.dir.create(sys.datetime("ymdHMSs")))
-			item(title='Guid' cmd=io.dir.create(str.guid))
+			item(title='Date Time' cmd=io.dir.create(sys.datetime("ymdHMSs")))
+			item(title='GUID' cmd=io.dir.create(str.guid))
 		}
 		
 		menu(title='New File' image=icon.new_file)
 		{
-			$dt = sys.datetime("ymdHMSs")			
+			$dt = sys.datetime("ymdHMSs")	
 			item(title='JS' cmd=io.file.create('@(dt).js', "const $ = document.querySelector.bind(document);\nconst $$ = document.querySelectorAll.bind(document);"))
 			item(title='CSS' cmd=io.file.create('@(dt).css', "*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}"))
 			item(title='HTML' cmd=io.file.create('@(dt).html', "<html>\n\t<head>\n\t</head>\n\t<body>text_here\n\t</body>\n</html>"))

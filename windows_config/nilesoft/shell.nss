@@ -21,7 +21,6 @@ import 'imports/theme.nss'
 import 'imports/images.nss'
 import 'imports/modify.nss'
 
-import 'imports/static.nss'
 item(where=this.title.length > 25 menu=title.more_options)
 
 menu(mode="multiple" title="Pin/Unpin" image=icon.pin) {}

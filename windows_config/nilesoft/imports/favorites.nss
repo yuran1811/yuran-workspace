@@ -1,22 +1,24 @@
-menu(type='*' title='Favorites' sep='top' icon=\uE124)
+menu(type='*' title='Favorites' sep='top' icon=\uE0C8)
 {
-    menu(title='Apps' icon=\uE15D)
+    menu(title='Apps' icon=\uE142)
     {
         item(title='FLStudio' cmd=path.combine('D:','Program','FLStudio','FLStudio 20.9.2.2963 (x64)','FL Studio.exe') icon=icon.flstudio)
-        item(title='Light Bulb' cmd=path.combine('D:','Program','light-bulb','LightBulb.exe') icon=\uE187)
+        item(title='Light Bulb' cmd=path.combine('D:','Program','light-bulb','LightBulb.exe') icon=\uE157)
         item(title='Everything' cmd=path.combine('D:','Program','Everything-1.4.1.1024.x64','Everything.exe') icon=\uE187)
+        item(title='Core Temp' cmd=path.combine('D:','Program','Core Temp','Core Temp.exe') icon=icon.core_temp)
+        item(title='CPU Z' cmd=path.combine('D:','Program','cpu-z_2.09-msi-en','cpuz_x64.exe') icon=\uE1E2)
     }
-    menu(title='Dirs' icon=\uE0D0)
+    menu(title='Dirs' icon=\uE019)
     {
-        item(title='Home' cmd=user.directory icon=inherit)
-        item(title='Downloads' cmd=user.downloads icon=inherit)
-        item(title='Pictures' cmd=user.pictures icon=inherit)
+        item(title='Home' cmd=user.directory icon=\uE0FB)
+        item(title='Downloads' cmd=user.downloads icon=\uE0BC)
+        item(title='Pictures' cmd=user.pictures icon=\uE14F)
         sep
         item(title='OneDrive' cmd=path.combine('@user.home','OneDrive') icon=\uE09C)
         item(title='GDrive' cmd=path.combine('D:','GDrive') icon=icon.gdrive)
         sep
-        item(title='YProcess' cmd=path.combine('D:','yuran','process') icon=inherit)
-        item(title='YProgram' cmd=path.combine('D:','Program') icon=inherit)
+        item(title='YProcess' cmd=path.combine('D:','yuran','process') icon=\uE188)
+        item(title='YProgram' cmd=path.combine('D:','Program') icon=\uE0F9)
     }
     menu(title='Links' icon=\uE14B)
     {
