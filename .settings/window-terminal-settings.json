@@ -32,7 +32,7 @@
   "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
   "disableAnimations": true,
   "experimental.rendering.software": true,
-  "firstWindowPreference": "persistedWindowLayout",
+  "firstWindowPreference": "defaultProfile",
   "focusFollowMouse": true,
   "initialCols": 80,
   "initialRows": 18,

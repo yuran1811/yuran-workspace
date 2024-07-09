@@ -71,7 +71,6 @@
   },
 
   "diffEditor.diffAlgorithm": "advanced",
-  "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
 
   "editor.codeActionsOnSave": {
@@ -138,7 +137,7 @@
   "editor.definitionLinkOpensInPeek": true,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.find.loop": true,
-  "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -148,7 +147,7 @@
   "editor.hover.sticky": true,
   "editor.inlineSuggest.enabled": true,
   "editor.insertSpaces": false,
-  "editor.lineHeight": 1.6,
+  "editor.lineHeight": 1.65,
   "editor.lineNumbers": "interval",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
@@ -171,16 +170,19 @@
   "files.autoSaveWhenNoErrors": true,
   "files.hotExit": "onExitAndWindowClose",
   "files.associations": {
+    "*.ejs": "html",
     ".env*": "dotenv",
     "*.cjs": "javascript",
     "*.mjs": "javascript",
     "*.css": "postcss",
     "*.postcss": "postcss",
-    "*.ejs": "html",
     "*.nss": "csharp",
     "*.shader": "glsl"
   },
 
+  "[glsl]": {
+    "editor.defaultFormatter": "raczzalan.webgl-glsl-editor"
+  },
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -221,6 +223,9 @@
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
 
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_path": "D:\\Program\\mingw64\\bin\\clang-format.exe",
@@ -246,11 +251,13 @@
   "dart.flutterHotReloadOnSave": "allIfDirty",
   "dart.hotReloadOnSave": "allIfDirty",
   "dart.openDevTools": "flutter",
+
   "html.autoClosingTags": true,
   "html.format.indentInnerHtml": true,
   "markdown.math.enabled": true,
   "markdown.updateLinksOnFileMove.enabled": "always",
   "markdown.validate.enabled": true,
+
   "notebook.formatOnSave.enabled": true,
   "notebook.insertFinalNewline": true,
   "notebook.output.scrolling": true,
@@ -448,7 +455,6 @@
   "tailwindCSS.lint.invalidVariant": "warning",
   "tailwindCSS.suggestions": true,
 
-  "prisma.showPrismaDataPlatformNotification": false,
   "quokka.compactMessageOutput": true,
   "quokka.startViewStatusBar": true,
   "quokka.syncSettings": true,
@@ -523,13 +529,15 @@
   "dotenv.cloakIcon": ".",
   "dotenv.enableAutocloaking": false,
   "dotenv.enableSecretpeeking": true,
-  "emmet.includeLanguages": { "postcss": "css" },
+  "emmet.includeLanguages": { "postcss": "css", "typescriptreact": "html" },
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": false,
   "emmet.useInlineCompletions": true,
   "importCost.fontStyle": "italic",
   "importCost.showCalculatingDecoration": false,
   "importCost.timeout": 10000,
+  "prisma.enableCodeLens": true,
+  "prisma.fileWatcher": true,
   "reactSnippets.settings.languageScopes": "typescript,typescriptreact,javascript,javascriptreact",
   "reactSnippets.settings.prettierEnabled": false,
   "reactSnippets.settings.typescript": true,

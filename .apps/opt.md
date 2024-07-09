@@ -1,4 +1,4 @@
-# Clean-up your laptop/desktop
+# Optimize your laptop/desktop
 
 - Run this command in the terminal with admin privilege:
 

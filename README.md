@@ -2,7 +2,7 @@
 
 ## Welcome to my workspace customization
 
-- [**VSCode Config**](./vscode_config)
-- [**ZSH Config**](./zsh_config)
+- [**VSCode Config**](./.vscode)
+- [**ZSH Config**](./.zsh)
 - [**C++ Config**](./cpp_config)
-- [**Others Config**](./__others)
+- [**Others Config**](./.settings)
