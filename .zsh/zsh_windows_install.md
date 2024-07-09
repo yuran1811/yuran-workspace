@@ -25,7 +25,7 @@ Usually `C:\Program Files\Git`
 
 Open git bash and type:
 
-```
+```bash
 zsh
 ```
 
@@ -44,7 +44,7 @@ Edit the `~/.bashrc` file. (create it if it doesn't exist)
 
 Add the following lines at the end of the file
 
-```
+```bash
 # Launch Zsh
 if [ -t 1 ]; then
 exec zsh
@@ -66,3 +66,8 @@ curl -fsSL https://raw.githubusercontent.com/oskarkrawczyk/honukai-iterm/master/
 ```shell
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="honukai"/g' ~/.zshrc
 ```
+
+## Configuration
+
+- See my `.zshrc` configuration [file](../dotfiles/.zshrc)
+  - `.p10k.zsh`: Powerlevel10k configuration [file](../dotfiles/.p10k.zsh)
