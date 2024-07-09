@@ -1,8 +1,5 @@
 # zmodload zsh/zprof
 
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -11,13 +8,16 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 DISABLE_UPDATE_PROMPT=true
-zstyle ':omz:update' mode disabled
+
 # plugins=(wd)
 
-# fix: slow zsh-autosuggestions copy&paste
 # autoload -Uz bracketed-paste-magic
 # zle -N bracketed-paste bracketed-paste-magic
 # zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+zstyle ':omz:update' mode disabled
+# zstyle ':completion:*' menu select
+# zstyle ':completion:*' file-list all
+# zstyle ':completion:*:*:-command-:*:*' group-order alias builtins functions commands
 
 source $ZSH/oh-my-zsh.sh
 
@@ -44,6 +44,7 @@ fe() {
   echo "Opening `$url` ..."
   open_command "$url"
 }
+
 web() {
   emulate -L zsh
   typeset -A urls
@@ -66,12 +67,19 @@ web() {
 
   open_command "$url"
 }
+
 tw() {
-  echo "tailwind init ..."
 	npm install -D tailwindcss postcss autoprefixer
 	npx tailwindcss init -p
 }
-mail() { open_command "https://mail.google.com/mail/u/${1}/#inbox" }
+
+cronlog() {
+  echo "===> Cron Task Log <==="
+  grep CRON /var/log/syslog | tail -$1
+}
+
+mkcd() { mkdir -p "$1" && cd "$1" }
+gmail() { open_command "https://mail.google.com/mail/u/${1}/#inbox" }
 ytlist() { open_command "https://www.youtube.com/playlist?list=PL6f36ViIxP_HsqR-HbKF2LBt2ZYGr8Rbi" }
 rm_merge_branch() { git fetch -p && git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -d }
 
@@ -83,7 +91,7 @@ cfcpp() { g++ $CODEFORCES_BUILD_FLAGS $1.cpp -o $1 && ./$1 && rm ./$1.exe }
 alias gg="web gg"
 alias ggs="web gg"
 alias sgg="web gg"
-alias ducks="web duck"
+alias ddgo="web duck"
 alias fgh="fe gh"
 alias fbundle="fe bundle"
 alias fsof="fe sof"
@@ -98,10 +106,14 @@ alias freact="fe react"
 
 alias gi="git init"
 alias gst="git status"
-alias gp="git push"
 alias ga="git add"
 alias gaa="git add ."
 alias gcm="git cz"
+alias gp="git push"
+alias gpl="git pull"
+alias gco="git checkout"
+alias gcb="git checkout -b"
+alias glo="git log --oneline --graph --decorate"
 
 alias ns="npm start"
 alias nt="npm test"
@@ -112,11 +124,20 @@ alias ys="yarn start"
 alias yt="yarn test"
 alias yd="yarn dev"
 alias yr="yarn run"
-alias yout="yarn upgrade-interactive"
+alias yupgr="yarn upgrade-interactive"
 
 alias cls="clear"
+alias lla="ls -alhX"
+alias grep="grep -P -i --color=auto"
 alias timecheck="time && zsh -i -c exit"
 alias newvite="npx create-vite@latest"
 
+alias port="netstat -tpn | grep"
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # zprof
