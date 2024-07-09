@@ -14,7 +14,7 @@
   "window.systemColorTheme": "dark",
   "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${remoteName}",
   "window.titleBarStyle": "custom",
-  "window.titleSeparator": "⚡",
+  "window.titleSeparator": " 🌽 ",
   "window.zoomLevel": 0,
 
   "debug.console.closeOnEnd": true,
@@ -674,7 +674,7 @@
   "vsicons.presets.jsOfficial": true,
   "vsicons.presets.tsOfficial": true,
 
-  // "terminal.integrated.fontFamily": "'FiraCode Nerd Font'",
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono', 'FiraCode Nerd Font', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Courier New', monospace",
   "terminal.integrated.cursorBlinking": false,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
