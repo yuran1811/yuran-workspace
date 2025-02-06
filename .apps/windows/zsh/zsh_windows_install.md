@@ -69,5 +69,6 @@ sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="honukai"/g' ~/.zshrc
 
 ## Configuration
 
-- See my `.zshrc` configuration [file](../dotfiles/.zshrc)
-  - `.p10k.zsh`: Powerlevel10k configuration [file](../dotfiles/.p10k.zsh)
+- See my `.zshrc` configuration [file](../../../dotfiles/.zshrc) for more customization
+  - `starship.toml`: Starship configuration [file](../../../dotfiles/starship.toml)
+  - `.p10k.zsh`: Powerlevel10k configuration [file](../../../dotfiles/.p10k.zsh)

@@ -222,15 +222,16 @@
   },
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.bracketPairColorization.enabled": true,
-  "editor.codeLensFontFamily": "Fira Code",
+  "editor.codeLensFontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.cursorBlinking": "solid",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorWidth": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.definitionLinkOpensInPeek": true,
+  "editor.fastScrollSensitivity": 4,
   "editor.find.addExtraSpaceOnTop": false,
   "editor.find.loop": true,
-  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'JetBrainsMono Nerd Font Mono', 'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 13.5,
   "editor.formatOnPaste": true,
@@ -263,12 +264,13 @@
   "files.autoSaveDelay": 500,
   "files.autoSaveWhenNoErrors": true,
   "files.hotExit": "onExitAndWindowClose",
+  "files.insertFinalNewline": false,
   "files.associations": {
     "*.ejs": "html",
     ".env*": "dotenv",
     "*.cjs": "javascript",
     "*.mjs": "javascript",
-    "*.css": "postcss",
+    "*.css": "tailwindcss",
     "*.scss": "postcss",
     "*.sass": "postcss",
     "*.postcss": "postcss",
@@ -336,6 +338,9 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
 
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_path": "D:\\Program\\mingw64\\bin\\clang-format.exe",
@@ -379,6 +384,7 @@
   "html.autoClosingTags": true,
   "html.format.indentInnerHtml": true,
   "markdown.math.enabled": true,
+  "markdown.styles": ["https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css"],
   "markdown.updateLinksOnFileMove.enabled": "always",
   "markdown.validate.enabled": true,
 
@@ -602,6 +608,9 @@
   "tailwindCSS.lint.invalidTailwindDirective": "warning",
   "tailwindCSS.lint.invalidVariant": "warning",
   "tailwindCSS.suggestions": true,
+  "tailwindCSS.includeLanguages": {
+    "postcss": "css"
+  },
 
   "quokka.compactMessageOutput": true,
   "quokka.startViewStatusBar": true,
@@ -831,13 +840,17 @@
   "oneDarkPro.markdownStyle": true,
   "oneDarkPro.vivid": true,
 
+  "terminal.integrated.altClickMovesCursor": true,
   "terminal.integrated.cursorBlinking": false,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font Mono', 'FiraCode Nerd Font', 'JetBrains Mono', 'Fira Code', 'Consolas', 'Courier New', monospace",
   "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.profiles.windows": {},
+  "terminal.integrated.profiles.windows": {
+    "JavaScript Debug Terminal": null,
+    "PowerShell": null
+  },
   "terminal.integrated.shellIntegration.enabled": true,
   "terminal.integrated.shellIntegration.history": 25,
   "terminal.integrated.smoothScrolling": false,
@@ -883,5 +896,6 @@
   "workbench.productIconTheme": "fluent-icons",
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
-  "workbench.preferredLightColorTheme": "Solarized Light"
+  "workbench.preferredLightColorTheme": "Solarized Light",
+  "window.newWindowProfile": "Default"
 }

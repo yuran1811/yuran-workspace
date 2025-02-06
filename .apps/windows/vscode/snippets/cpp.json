@@ -2,7 +2,9 @@
   "C++ starter file": {
     "prefix": "!",
     "isFileTemplate": true,
-    "body": ["#include <iostream>\n\nusing std::cin;\nusing std::cout;\n\nint main() {\n\tint n;\n\tcin >> n;\n\tcout << n << '\n';\n\treturn 0;\n}"],
+    "body": [
+      "#include <iostream>\n\nusing std::cin;\nusing std::cout;\n\nint main() {\n\tint n;\n\tcin >> n;\n\tcout << n << '\\n';\n\treturn 0;\n}"
+    ],
     "description": "C++ starter file"
   },
   "C++ starter file 2": {
@@ -11,7 +13,7 @@
     "body": ["#include <bits/stdc++.h>\n\nusing namespace std;\n\nint main() {\n\tint n; cin >> n;\n\treturn 0;\n}"],
     "description": "C++ starter file 2"
   },
-  
+
   "quick cout empty string": {
     "prefix": "ces",
     "isFileTemplate": false,
@@ -21,7 +23,9 @@
   "for-loop backward and forward": {
     "prefix": "rep",
     "isFileTemplate": false,
-    "body": ["#define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))"],
+    "body": [
+      "#define rep(i, begin, end) for (__typeof(end) i = (begin) - ((begin) > (end)); i != (end) - ((begin) > (end)); i += 1 - 2 * ((begin) > (end)))"
+    ],
     "description": "for-loop backward and forward"
   },
 
@@ -42,22 +46,13 @@
 
   "check sqr num": {
     "prefix": "is_sqrnum",
-    "body": [
-      "bool is_sqrnum(int n) {",
-      "  int x = sqrt(n);",
-      "  return x * x == n;",
-      "}"
-    ],
+    "body": ["bool is_sqrnum(int n) {", "  int x = sqrt(n);", "  return x * x == n;", "}"],
     "description": "check sqr num"
   },
 
   "typedef custom": {
     "prefix": "typedeftemp",
-    "body": [
-      "typedef long long ll;",
-      "typedef pair<int, int> pii;",
-      "typedef vector<pair<int, int>> vpii;",
-    ],
+    "body": ["typedef long long ll;", "typedef pair<int, int> pii;", "typedef vector<pair<int, int>> vpii;"],
     "description": "typedef custom"
   }
 }

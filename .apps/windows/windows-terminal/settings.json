@@ -1,0 +1,201 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "id": "User.copy.644BA8F2",
+      "keys": "ctrl+c"
+    },
+    {
+      "command": "paste",
+      "id": "User.paste",
+      "keys": "ctrl+v"
+    },
+    {
+      "command": "find",
+      "id": "User.find",
+      "keys": "ctrl+shift+f"
+    },
+    {
+      "command": {
+        "action": "splitPane",
+        "split": "auto",
+        "splitMode": "duplicate"
+      },
+      "id": "User.splitPane.A6751878",
+      "keys": "alt+shift+d"
+    }
+  ],
+  "centerOnLaunch": true,
+  "copyFormatting": "none",
+  "copyOnSelect": true,
+  "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+  "disableAnimations": true,
+  "firstWindowPreference": "defaultProfile",
+  "focusFollowMouse": true,
+  "initialCols": 80,
+  "initialRows": 18,
+  "language": "en-US",
+  "launchMode": "default",
+  "minimizeToNotificationArea": false,
+  "newTabMenu": [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
+  "profiles": {
+    "defaults": {
+      "adjustIndistinguishableColors": "never",
+      "backgroundImage": "desktopWallpaper",
+      "backgroundImageOpacity": 0.12,
+      "backgroundImageStretchMode": "uniformToFill",
+      "closeOnExit": "never",
+      "colorScheme": "One Half Dark",
+      "cursorShape": "underscore",
+      "elevate": false,
+      "experimental.retroTerminalEffect": false,
+      "font": {
+        "face": "JetBrainsMono Nerd Font Mono",
+        "size": 12,
+        "weight": "semi-light"
+      },
+      "historySize": 2500,
+      "intenseTextStyle": "none",
+      "opacity": 100,
+      "padding": "10",
+      "startingDirectory": null,
+      "useAcrylic": true
+    },
+    "list": [
+      {
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "Command Prompt"
+      },
+      {
+        "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+        "hidden": false,
+        "name": "PowerShell",
+        "source": "Windows.Terminal.PowershellCore"
+      },
+      {
+        "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+        "hidden": false,
+        "name": "Git Bash",
+        "source": "Git"
+      },
+      {
+        "guid": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+        "hidden": true,
+        "name": "Ubuntu-22.04",
+        "source": "Windows.Terminal.Wsl"
+      },
+      {
+        "guid": "{071908c9-a57b-5e14-9bf1-3ecb08f7d981}",
+        "hidden": true,
+        "name": "Developer Command Prompt for VS 2022",
+        "source": "Windows.Terminal.VisualStudio"
+      },
+      {
+        "guid": "{fb574543-51f0-58f0-8395-ef3a7bfe8165}",
+        "hidden": true,
+        "name": "Developer PowerShell for VS 2022",
+        "source": "Windows.Terminal.VisualStudio"
+      },
+      {
+        "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+        "hidden": true,
+        "name": "Visual Studio Debug Console",
+        "source": "VSDebugConsole"
+      },
+      {
+        "guid": "{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}",
+        "hidden": false,
+        "name": "Ubuntu 22.04.5 LTS",
+        "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "background": "#1B1B1B",
+      "black": "#1B1B1B",
+      "blue": "#377588",
+      "brightBlack": "#928374",
+      "brightBlue": "#83A598",
+      "brightCyan": "#8EC07C",
+      "brightGreen": "#1CCF4D",
+      "brightPurple": "#D3869B",
+      "brightRed": "#FB4934",
+      "brightWhite": "#EBDBB2",
+      "brightYellow": "#C79625",
+      "cursorColor": "#EBDBB2",
+      "cyan": "#689D6A",
+      "foreground": "#EBDBB2",
+      "green": "#389433",
+      "name": "GruvboxDarkHard",
+      "purple": "#B16286",
+      "red": "#CC241D",
+      "selectionBackground": "#665C54",
+      "white": "#BBCDD9",
+      "yellow": "#DEBA2B"
+    },
+    {
+      "background": "#1F2335",
+      "black": "#3B4261",
+      "blue": "#7AA2F7",
+      "brightBlack": "#3B4261",
+      "brightBlue": "#7AA2F7",
+      "brightCyan": "#7DCFFF",
+      "brightGreen": "#73DACA",
+      "brightPurple": "#BB9AF7",
+      "brightRed": "#F7768E",
+      "brightWhite": "#A9B1D6",
+      "brightYellow": "#E0AF68",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#7DCFFF",
+      "foreground": "#7982A9",
+      "green": "#73DACA",
+      "name": "TokyoNightStorm",
+      "purple": "#BB9AF7",
+      "red": "#F7768E",
+      "selectionBackground": "#FFFFFF",
+      "white": "#7982A9",
+      "yellow": "#E0AF68"
+    },
+    {
+      "background": "#1A1A1A",
+      "black": "#121212",
+      "blue": "#2B4FFF",
+      "brightBlack": "#666666",
+      "brightBlue": "#5C78FF",
+      "brightCyan": "#5AC8FF",
+      "brightGreen": "#905AFF",
+      "brightPurple": "#5EA2FF",
+      "brightRed": "#BA5AFF",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#685AFF",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#28B9FF",
+      "foreground": "#F1F1F1",
+      "green": "#7129FF",
+      "name": "xcad",
+      "purple": "#2883FF",
+      "red": "#A52AFF",
+      "selectionBackground": "#FFFFFF",
+      "white": "#F1F1F1",
+      "yellow": "#3D2AFF"
+    }
+  ],
+  "snapToGridOnResize": false,
+  "tabWidthMode": "equal",
+  "theme": "dark",
+  "themes": [],
+  "useAcrylicInTabRow": false,
+  "windowingBehavior": "useAnyExisting"
+}

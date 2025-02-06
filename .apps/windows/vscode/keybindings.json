@@ -357,5 +357,17 @@
   {
     "key": "f10",
     "command": "workbench.action.debug.stepOver"
+  },
+  {
+    "key": "ctrl+shift+alt+d",
+    "command": "docthis.documentThis"
+  },
+  {
+    "key": "ctrl+alt+d ctrl+alt+d",
+    "command": "-docthis.documentThis"
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "workbench.action.tasks.runTask"
   }
 ]

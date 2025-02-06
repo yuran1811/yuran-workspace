@@ -1,3 +1,4 @@
 [submodule "dotfiles"]
 	path = dotfiles
 	url = https://github.com/yuran1811/dotfiles
+	branch = main
