@@ -1,4 +1,4 @@
-### CPP Refs
+**CPP Refs**
 
 - [CPP Project Structure](https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/vector-of-bool/pitchfork/develop/data/spec.bs#intro)
 
@@ -6,6 +6,6 @@
 
 - [CMake Tests](https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-presets.md#test)
 
-### Other Refs
+**Other Refs**
 
 - [Prompts for GPT](https://prompts.chat/#act-as-a-fullstack-software-developer)
