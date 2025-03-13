@@ -9,6 +9,7 @@
   "window.commandCenter": false,
   "window.customMenuBarAltFocus": false,
   "window.newWindowDimensions": "maximized",
+  "window.newWindowProfile": "Default",
   "window.openFoldersInNewWindow": "on",
   "window.restoreWindows": "preserve",
   "window.systemColorTheme": "dark",
@@ -141,6 +142,8 @@
   "extensions.ignoreRecommendations": true,
 
   "search.defaultViewMode": "tree",
+  "search.searchOnTypeDebouncePeriod": 300,
+  "search.showLineNumbers": true,
   "search.sortOrder": "fileNames",
   "search.exclude": {
     "**/.git": true,
@@ -151,10 +154,10 @@
     "**/.vscode": true,
     "**/.yarn": true,
     "**/__pycache__": true,
+    "**/node_modules": true,
     "**/bower_components": true,
     "**/dist": true,
     "**/logs": true,
-    "**/node_modules": true,
     "**/out": true,
     "**/tmp": true,
     "**/package-lock.json": true,
@@ -270,7 +273,7 @@
     ".env*": "dotenv",
     "*.cjs": "javascript",
     "*.mjs": "javascript",
-    "*.css": "tailwindcss",
+    "*.css": "postcss",
     "*.scss": "postcss",
     "*.sass": "postcss",
     "*.postcss": "postcss",
@@ -287,21 +290,24 @@
     "**/__pycache__": true
   },
 
-  "[glsl]": {
-    "editor.defaultFormatter": "raczzalan.webgl-glsl-editor"
-  },
   "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
   "[cc]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[glsl]": {
+    "editor.defaultFormatter": "raczzalan.webgl-glsl-editor"
+  },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS)|($TAGS)!.*)"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "[markdown]": {
     "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)\\s*($TAGS)|^//\\s*\\[x\\]|^//\\s*\\[ \\])"
@@ -310,7 +316,10 @@
     "editor.inlayHints.enabled": "on"
   },
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
   },
   "[java]": {
     "editor.defaultFormatter": "redhat.java",
@@ -344,7 +353,7 @@
 
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_path": "D:\\Program\\mingw64\\bin\\clang-format.exe",
-  "C_Cpp.clang_format_sortIncludes": false,
+  "C_Cpp.clang_format_sortIncludes": true,
   "C_Cpp.clang_format_style": "Google",
   "C_Cpp.codeAnalysis.clangTidy.checks.disabled": ["*"],
   "C_Cpp.codeAnalysis.clangTidy.codeAction.formatFixes": true,
@@ -353,16 +362,18 @@
   "C_Cpp.codeAnalysis.clangTidy.headerFilter": null,
   "C_Cpp.codeAnalysis.clangTidy.path": "D:\\Program\\mingw64\\bin\\clang-tidy.exe",
   "C_Cpp.default.compilerPath": "D:\\Program\\mingw64\\bin\\g++.exe",
-  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.cppStandard": "c++20",
   "C_Cpp.default.intelliSenseMode": "gcc-x86",
+  "C_Cpp.doxygen.generatedStyle": "/**",
   "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.refactoring.includeHeader": "always",
+
+  "cmake.buildBeforeRun": true,
   "cmake.configureOnOpen": false,
   "cmake.deleteBuildDirOnCleanConfigure": true,
   "cmake.launchBehavior": "breakAndReuseTerminal",
   "cmake.options.statusBarVisibility": "icon",
   "cmake.pinnedCommands": ["workbench.action.tasks.configureTaskRunner", "workbench.action.tasks.runTask"],
-  "cmake.showOptionsMovedNotification": false,
 
   "glsl-canvas.extensions": ["glsl", "frag", "vert", "fs", "vs", "EXT_shader_texture_lod"],
   "glsl-canvas.refreshOnChange": true,
@@ -381,6 +392,9 @@
   "java.referencesCodeLens.enabled": true,
   "java.saveActions.organizeImports": true,
 
+  "rust-analyzer.initializeStopped": true,
+  "rust-analyzer.restartServerOnConfigChange": true,
+
   "html.autoClosingTags": true,
   "html.format.indentInnerHtml": true,
   "markdown.math.enabled": true,
@@ -392,7 +406,17 @@
   "notebook.insertFinalNewline": true,
   "notebook.output.scrolling": true,
   "notebook.stickyScroll.enabled": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.generateWithTypeAnnotation": true,
+  "python.analysis.inlayHints.callArgumentNames": "partial",
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "standard",
   "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.venvFolders": [".venv"],
 
   "javascript.autoClosingTags": true,
   "javascript.inlayHints.parameterNames.enabled": "literals",
@@ -567,7 +591,7 @@
   "prettier.endOfLine": "auto",
   "prettier.jsxSingleQuote": true,
   "prettier.printWidth": 120,
-  "prettier.resolveGlobalModules": true,
+  "prettier.resolveGlobalModules": false,
   "prettier.singleQuote": true,
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
@@ -612,17 +636,6 @@
     "postcss": "css"
   },
 
-  "quokka.compactMessageOutput": true,
-  "quokka.startViewStatusBar": true,
-  "quokka.syncSettings": true,
-  "tabnine.debounceMilliseconds": 3,
-  "tabnine.experimentalAutoImports": true,
-  "vsintellicode.features.python.deepLearning": "enabled",
-  "vsintellicode.java.completionsEnabled": false,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "vsintellicode.python.completionsEnabled": false,
-  "vsintellicode.typescript.completionsEnabled": true,
-
   "git.autofetch": true,
   "git.autoStash": true,
   "git.branchSortOrder": "alphabetically",
@@ -631,14 +644,22 @@
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
   "git.untrackedChanges": "separate",
+  "git.blame.editorDecoration.enabled": true,
+  "git.branchWhitespaceChar": "-",
+  "git.terminalGitEditor": true,
+  "git.enableCommitSigning": true,
+
+  "github.copilot.chat.codesearch.enabled": true,
   "github.copilot.chat.scopeSelection": true,
   "github.copilot.editor.enableAutoCompletions": true,
+  // "github.copilot.nextEditSuggestions.enabled": false,
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
     "yaml": false,
     "xml": false
   },
+
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
@@ -686,6 +707,24 @@
     }
   },
 
+  "emmet.includeLanguages": { "postcss": "css", "typescriptreact": "html" },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": false,
+  "emmet.useInlineCompletions": true,
+  "reactSnippets.settings.languageScopes": "typescript,typescriptreact,javascript,javascriptreact",
+  "reactSnippets.settings.prettierEnabled": false,
+  "reactSnippets.settings.typescript": true,
+  "reactSnippets.settings.typescriptPropsStatePrefix": "interface",
+
+  "quokka.compactMessageOutput": true,
+  "quokka.startViewStatusBar": true,
+  "quokka.syncSettings": true,
+  "tabnine.debounceMilliseconds": 3,
+  "tabnine.experimentalAutoImports": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  "roo-cline.allowedCommands": ["npm test", "npm install", "tsc", "git log", "git diff", "git show"],
+
   "bookmarks.saveBookmarksInProject": true,
   "color-highlight.matchRgbWithNoFunction": false,
   "color-highlight.matchWords": false,
@@ -700,16 +739,8 @@
   "importCost.timeout": 10000,
   "prisma.enableCodeLens": true,
   "prisma.fileWatcher": true,
+  "smartClicks.htmlLanguageIds": ["html", "vue", "svelte"],
   "smartClicks.rules": { "dash": false },
-
-  "emmet.includeLanguages": { "postcss": "css", "typescriptreact": "html" },
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.triggerExpansionOnTab": false,
-  "emmet.useInlineCompletions": true,
-  "reactSnippets.settings.languageScopes": "typescript,typescriptreact,javascript,javascriptreact",
-  "reactSnippets.settings.prettierEnabled": false,
-  "reactSnippets.settings.typescript": true,
-  "reactSnippets.settings.typescriptPropsStatePrefix": "interface",
 
   "better-comments.highlightPlainText": true,
   "better-comments.multilineComments": true,
@@ -829,16 +860,15 @@
   "material-icon-theme.activeIconPack": "react_redux",
   "material-icon-theme.hidesExplorerArrows": true,
   "material-icon-theme.saturation": 0.8,
-  "vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
-  "vsicons.presets.hideExplorerArrows": true,
-  "vsicons.presets.jsOfficial": true,
-  "vsicons.presets.tsOfficial": true,
-
   "oneDarkPro.bold": true,
   "oneDarkPro.editorTheme": "One Dark Pro Flat",
   "oneDarkPro.italic": true,
   "oneDarkPro.markdownStyle": true,
   "oneDarkPro.vivid": true,
+  "vscode_custom_css.imports": ["file:///D:/Program/vscode/style.css"],
+  "vsicons.presets.hideExplorerArrows": true,
+  "vsicons.presets.jsOfficial": true,
+  "vsicons.presets.tsOfficial": true,
 
   "terminal.integrated.altClickMovesCursor": true,
   "terminal.integrated.cursorBlinking": false,
@@ -852,7 +882,7 @@
     "PowerShell": null
   },
   "terminal.integrated.shellIntegration.enabled": true,
-  "terminal.integrated.shellIntegration.history": 25,
+  "terminal.integrated.shellIntegration.history": 150,
   "terminal.integrated.smoothScrolling": false,
   "terminal.integrated.stickyScroll.enabled": true,
 
@@ -896,6 +926,5 @@
   "workbench.productIconTheme": "fluent-icons",
   "workbench.colorTheme": "One Dark Pro Darker",
   "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
-  "workbench.preferredLightColorTheme": "Solarized Light",
-  "window.newWindowProfile": "Default"
+  "workbench.preferredLightColorTheme": "Solarized Light"
 }
