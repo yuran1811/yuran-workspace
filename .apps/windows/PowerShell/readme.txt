@@ -1,0 +1,1 @@
+- Copy the PowerShell/ folder to ~/Documents
