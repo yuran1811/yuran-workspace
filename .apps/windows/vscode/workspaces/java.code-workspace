@@ -1,0 +1,10 @@
+{
+  "folders": [
+    {
+      "path": "../../Desktop/gh/yulang"
+    }
+  ],
+  "settings": {
+    "java.compile.nullAnalysis.mode": "automatic"
+  }
+}
